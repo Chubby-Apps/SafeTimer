@@ -36,7 +36,7 @@ features                                  :
 
   - title                                 : Protégete a ti y a los demás
     description                           : Junto a la distancia social, las mascarillas son la mejor herramienta que tenemos hoy en día para hacer frente al COVID-19. No sólo es importante llevarla, también saber colocársela y no utilizarla más tiempo para el que han sido diseñadas.
-    fontawesome_icon_name                 : virus
+    fontawesome_icon_name                 : heart
     
   - title                                 : Te avisa cuando tienes que cambiar la mascarilla
     description                           : Crea tantos temporizadores como mascarillas estés usando en ese momento. La app se encarga de recordar cuánto tiempo de uso le queda a cada una. Llegado el momento, te enviará una notificación para que la cambies.
