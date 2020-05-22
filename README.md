@@ -1,6 +1,8 @@
 # SafeTimer
 ![Image](docs/assets/banner.png?)
+
 ![Versión](https://img.shields.io/badge/Versión-1.0.1-blue)
+
 SafeTimer es una app para iPhone y Apple Watch ([App Store](https://apps.apple.com/app/apple-store/id1512032981?pt=121500132&ct=github&mt=8)) que te ayuda a controlar el tiempo que has usado una mascarilla. Ha sido creada de forma altruista por [Hortelanos](https://hortelanos.net), es completamente gratuita (ni compras in-app, ni anuncios) y su código está publicado de forma abierta para que cualquiera pueda contribuir a mejorarla.
 
 ### ¿En qué se diferencia de un simple temporizador?
