@@ -34,11 +34,11 @@ youtube_username                          :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : Mantén la distancia. Usa mascarilla.
+  - title                                 : Protégete a ti y a los demás
     description                           : Junto a la distancia social, las mascarillas son la mejor herramienta que tenemos hoy en día para hacer frente al COVID-19. No sólo es importante llevarla, también saber colocársela y no utilizarla más tiempo para el que han sido diseñadas.
     fontawesome_icon_name                 : virus
     
-  - title                                 : SafeTimer te avisa cuando es hora de cambiar
+  - title                                 : Te avisa cuando tienes que cambiar la mascarilla
     description                           : Crea tantos temporizadores como mascarillas estés usando en ese momento. La app se encarga de recordar cuánto tiempo de uso le queda a cada una. Llegado el momento, te enviará una notificación para que la cambies.
     fontawesome_icon_name                 : bell
 
@@ -71,7 +71,7 @@ device_color                              : black                               
 
 body_background_color                     : "#ffffff"
 
-link_color                                : "#1d63ea"
+link_color                                : "#FFAD5A"
 
 app_title_color                           : "#ffffff"
 app_price_color                           : "#ffffff"
@@ -80,11 +80,11 @@ app_description_color                     : "#ffffff"
 feature_title_color                       : "#000000"
 feature_text_color                        : "#666666"
 
-feature_icons_foreground_color            : "#1d63ea"
-feature_icons_background_color            : "#e6e6e6"
+feature_icons_foreground_color            : "#ffffff"
+feature_icons_background_color            : "#FFAD5A"
 
-social_icons_foreground_color             : "#666666"
-social_icons_background_color             : "#e6e6e6"
+social_icons_foreground_color             : "#ffffff"
+social_icons_background_color             : "#FFAD5A"
 
 footer_text_color                         : "#666666"
 
