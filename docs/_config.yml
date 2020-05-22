@@ -40,7 +40,7 @@ features                                  :
     
   - title                                 : Te avisa cuando tienes que cambiar la mascarilla
     description                           : Crea tantos temporizadores como mascarillas estés usando en ese momento. La app se encarga de recordar cuánto tiempo de uso le queda a cada una. Llegado el momento, te enviará una notificación para que la cambies.
-    fontawesome_icon_name                 : heart
+    fontawesome_icon_name                 : bell
 
   - title                                 : Gratis y de Código Abierto
     description                           : SafeTimer ha sido desarrollada de manera altruista por Hortelanos para contribuir a superar la crisis sanitaria. Por eso, es totalmente gratuita (ni compras in-app, ni anuncios) y su código está publicado en Github. La ayuda es bienvenida.
