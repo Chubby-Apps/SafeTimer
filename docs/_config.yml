@@ -4,7 +4,7 @@ page_title                                : SafeTimer                           
 # App Info
 ios_app_id                                : 1512032981                                # Required. Enter iOS app ID to automatically populate name, price and icons (e.g. 718043190).
 
-appstore_link                             :                                           # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
+appstore_link                             : https://apps.apple.com/app/apple-store/id1512032981?pt=121500132&ct=web&mt=8  # Automatically populates if not set and if iOS app ID is set. Otherwise enter manually.
 playstore_link                            :                                           # Enter Google Play Store URL.
 presskit_download_link                    : https://hortelanos.net/contacto/                                          # Enter a link to downloadable file or (e.g. public Dropbox link to a .zip file). 
                                                                                       # Or upload your press kit file to assets and set path accordingly (e.g. "assets/your_press_kit.zip").
@@ -12,7 +12,7 @@ presskit_download_link                    : https://hortelanos.net/contacto/    
 app_icon                                  : # assets/appicon.png                      # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : SafeTimer                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : Gratis                                          # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : Write a short tagline for your app.
+app_description                           : La app que te ayuda a controlar el uso de mascarillas
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
@@ -26,7 +26,7 @@ email_address                             : miguel@hortelanos.net
 facebook_username                         :                                           
 instagram_username                        : hortelanos
 twitter_username                          : 
-github_username                           : Hortelanos
+github_username                           : Hortelanos/SafeTimer
 youtube_username                          :
 
 
@@ -34,47 +34,29 @@ youtube_username                          :
 # Feature List                            Edit, add or remove features to be presented.
 features                                  :
 
-  - title                                 : SafeTimer
-    description                           : Designed for GitHub Pages. Fork. Edit _config.yml. Upload screenshot/video. Push to gh-pages branch. Voilá!
-    fontawesome_icon_name                 : magic
+  - title                                 : Mantén la distancia. Usa mascarilla.
+    description                           : Junto a la distancia social, las mascarillas son la mejor herramienta que tenemos hoy en día para hacer frente al COVID-19. No sólo es importante llevarla, también saber colocársela y no utilizarla más tiempo para el que han sido diseñadas.
+    fontawesome_icon_name                 : head-side-mask
     
-  - title                                 : iPhone Device Preview
-    description                           : Preview your app in the context of an iPhone device. Five different device colors included.
-    fontawesome_icon_name                 : mobile
+  - title                                 : SafeTimer te avisa cuando es hora de cambiar
+    description                           : Crea tantos temporizadores como mascarillas estés usando en ese momento. La app se encarga de recordar cuánto tiempo de uso le queda a cada una. Llegado el momento, te enviará una notificación para que la cambies. También podrás saber cuánto tiempo de más has usado cada mascarilla.
+    fontawesome_icon_name                 : bell
 
-  - title                                 : Video Support
-    description                           : Preview app video on the iPhone device simply by placing your video files in the videos folder.
-    fontawesome_icon_name                 : play-circle
+  - title                                 : Gratis y de Código Abierto
+    description                           : SafeTimer ha sido desarrollada de manera altruista por Hortelanos para contribuir a superar la crisis sanitaria. Por eso, es totalmente gratuita (ni compras in-app, ni anuncios) y su código está publicado en Github. La ayuda es bienvenida.
+    fontawesome_icon_name                 : code-branch
 
-  - title                                 : Automatic Icon and Metadata
-    description                           : Enter iOS app ID in the _config.yml file to automatically fetch app icon, price and App Store Link.
+  - title                                 : También en tu Apple Watch
+    description                           : Además de en iPhone, SafeTimer está disponible para Apple Watch. La app es totalmente independiente, no necesitas tener tu teléfono cerca para configurarla o utilizarla.
+    fontawesome_icon_name                 : clock
+
+  - title                                 : Sincronización en la nube
+    description                           : Todos los temporizadores que crees para tus mascarillas se sincronizan en la nube con iCloud. Así puedes usar SafeTimer en tu móvil o tu reloj sin mayor problema.
     fontawesome_icon_name                 : sync
-
-  - title                                 : Easy to Tweak
-    description                           : Tweak accent color, images, icons and transparency via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : adjust
   
-  - title                                 : Feature List
-    description                           : Add features (like this one) to your site via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : star
-
-  - title                                 : Smart App Banner
-    description                           : Display a smart app banner on iOS devices.
-    fontawesome_icon_name                 : arrow-alt-circle-down
-
-  - title                                 : Social Links
-    description                           : Easily add social media accounts and contact info in the footer via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : link
-
-  - title                                 : FontAwesome Support
-    description                           : Pick custom Font Awesome icons for the feature list via the _config.yml file. No HTML/CSS needed.
-    fontawesome_icon_name                 : info-circle
-
-  - title                                 : # New Feature Title
-    description                           : # New Feature Description
-    fontawesome_icon_name                 : # Enter Font Awesome icon name (e.g. star). Find icons on fontawesome.com/icons.
-
-
+  - title                                 : Disponible en 4 idiomas
+    description                           : La app está disponible en Castellano, Euskera, Inglés y Francés. Si quieres ayudarnos a traducirla a otros idiomas escríbenos un mail.
+    fontawesome_icon_name                 : language
 
 # Theme Settings
 topbar_color                              : "#000000"
