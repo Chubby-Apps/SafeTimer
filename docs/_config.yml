@@ -36,10 +36,10 @@ features                                  :
 
   - title                                 : Mantén la distancia. Usa mascarilla.
     description                           : Junto a la distancia social, las mascarillas son la mejor herramienta que tenemos hoy en día para hacer frente al COVID-19. No sólo es importante llevarla, también saber colocársela y no utilizarla más tiempo para el que han sido diseñadas.
-    fontawesome_icon_name                 : head-side-mask
+    fontawesome_icon_name                 : virus
     
   - title                                 : SafeTimer te avisa cuando es hora de cambiar
-    description                           : Crea tantos temporizadores como mascarillas estés usando en ese momento. La app se encarga de recordar cuánto tiempo de uso le queda a cada una. Llegado el momento, te enviará una notificación para que la cambies. También podrás saber cuánto tiempo de más has usado cada mascarilla.
+    description                           : Crea tantos temporizadores como mascarillas estés usando en ese momento. La app se encarga de recordar cuánto tiempo de uso le queda a cada una. Llegado el momento, te enviará una notificación para que la cambies.
     fontawesome_icon_name                 : bell
 
   - title                                 : Gratis y de Código Abierto
@@ -47,7 +47,7 @@ features                                  :
     fontawesome_icon_name                 : code-branch
 
   - title                                 : También en tu Apple Watch
-    description                           : Además de en iPhone, SafeTimer está disponible para Apple Watch. La app es totalmente independiente, no necesitas tener tu teléfono cerca para configurarla o utilizarla.
+    description                           : Además de en iPhone, SafeTimer está disponible para Apple Watch. La app es totalmente independiente, no necesitas tener tu teléfono para usarla.
     fontawesome_icon_name                 : clock
 
   - title                                 : Sincronización en la nube
