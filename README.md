@@ -1,5 +1,5 @@
 # SafeTimer
-![Image](docs/assets/banner.png?)
+![Image](docs/assets/banner.jpg?)
 
 ![Versión](https://img.shields.io/badge/Versión-1.0.1-blue)
 
