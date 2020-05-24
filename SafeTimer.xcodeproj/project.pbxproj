@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		710175622470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */; };
+		710175632470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */; };
+		710175642470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */; };
+		710175652470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */; };
+		7108A2AC246ED69E00C1305F /* botonIniciar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108A2AB246ED69E00C1305F /* botonIniciar.swift */; };
+		7108A2AF246EF24300C1305F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7108A2AE246EF24300C1305F /* CloudKit.framework */; };
+		7108A2B1246F071900C1305F /* ajustesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71783420246338AF002E9426 /* ajustesModel.swift */; };
+		7108A2B2246F073100C1305F /* AlarmaLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178341A2461CDB8002E9426 /* AlarmaLogic.swift */; };
+		7108A2B3246F073100C1305F /* TextBindManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71475BDC246C6445006B1918 /* TextBindManager.swift */; };
+		7108A2BC246F074600C1305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452B3246DCC2800F885DE /* Assets.xcassets */; };
+		7108A2BD246F074700C1305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452B3246DCC2800F885DE /* Assets.xcassets */; };
+		7108A2BE246F075700C1305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719879AF24608470003C4C49 /* Assets.xcassets */; };
+		7108A2BF246F075800C1305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719879AF24608470003C4C49 /* Assets.xcassets */; };
+		7108A2C0246F08CC00C1305F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178341C2461D940002E9426 /* Constants.swift */; };
+		7108A2C2246F0B5C00C1305F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7108A2C1246F0B5C00C1305F /* CoreData.framework */; };
+		710DE7B8247017DB000AE643 /* Mascarillas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71879B7F246497E60050259B /* Mascarillas.xcdatamodeld */; };
+		713B80BC246087A600156D8D /* AjustesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B80BB246087A600156D8D /* AjustesView.swift */; };
+		713B80C024608E2C00156D8D /* nuevaMascarillaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B80BF24608E2C00156D8D /* nuevaMascarillaView.swift */; };
+		71475BDD246C6445006B1918 /* TextBindManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71475BDC246C6445006B1918 /* TextBindManager.swift */; };
+		7147D25624703BBD001456FA /* ListaTemporizadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147D25524703BBD001456FA /* ListaTemporizadores.swift */; };
+		7147D25924703C86001456FA /* nTempWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147D25824703C86001456FA /* nTempWatch.swift */; };
+		7147D25B24704A66001456FA /* bIniciarWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147D25A24704A66001456FA /* bIniciarWatch.swift */; };
+		7147D25D2470535D001456FA /* tempRowWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147D25C2470535D001456FA /* tempRowWatch.swift */; };
+		717834162461C2D6002E9426 /* iconoAjustes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717834152461C2D6002E9426 /* iconoAjustes.swift */; };
+		717834182461C338002E9426 /* botonFuncionNoDisponible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717834172461C338002E9426 /* botonFuncionNoDisponible.swift */; };
+		7178341B2461CDB8002E9426 /* AlarmaLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178341A2461CDB8002E9426 /* AlarmaLogic.swift */; };
+		7178341D2461D940002E9426 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178341C2461D940002E9426 /* Constants.swift */; };
+		71783421246338AF002E9426 /* ajustesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71783420246338AF002E9426 /* ajustesModel.swift */; };
+		717F9F452471541000F937A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 717F9F492471541000F937A2 /* Localizable.strings */; };
+		717F9F462471541000F937A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 717F9F492471541000F937A2 /* Localizable.strings */; };
+		717F9F472471541000F937A2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 717F9F492471541000F937A2 /* Localizable.strings */; };
+		717F9F502471B29A00F937A2 /* creditosWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F9F4F2471B29A00F937A2 /* creditosWatch.swift */; };
+		717F9F522471BEC600F937A2 /* AppStoreReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F9F512471BEC600F937A2 /* AppStoreReviewManager.swift */; };
+		71879B5524648F2D0050259B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71879B5424648F2D0050259B /* CloudKit.framework */; };
+		71879B572464915C0050259B /* mascarillaRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71879B562464915C0050259B /* mascarillaRow.swift */; };
+		71879B81246497E60050259B /* Mascarillas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71879B7F246497E60050259B /* Mascarillas.xcdatamodeld */; };
+		719879AA2460846E003C4C49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719879A92460846E003C4C49 /* AppDelegate.swift */; };
+		719879AC2460846E003C4C49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719879AB2460846E003C4C49 /* SceneDelegate.swift */; };
+		719879AE2460846E003C4C49 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719879AD2460846E003C4C49 /* HomeView.swift */; };
+		719879B024608470003C4C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719879AF24608470003C4C49 /* Assets.xcassets */; };
+		719879B324608470003C4C49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719879B224608470003C4C49 /* Preview Assets.xcassets */; };
+		719879B624608470003C4C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719879B424608470003C4C49 /* LaunchScreen.storyboard */; };
+		719E1D362469C80E003D5B99 /* nuevoTemporizadorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E1D352469C80E003D5B99 /* nuevoTemporizadorRow.swift */; };
+		71D4529D246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4529C246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift */; };
+		71D452A3246D93EB00F885DE /* creditos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452A2246D93EB00F885DE /* creditos.swift */; };
+		71D452B2246DCC2100F885DE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D452B0246DCC2100F885DE /* Interface.storyboard */; };
+		71D452B4246DCC2800F885DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452B3246DCC2800F885DE /* Assets.xcassets */; };
+		71D452BB246DCC2900F885DE /* SafeTimerWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 71D452BA246DCC2900F885DE /* SafeTimerWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		71D452C0246DCC2900F885DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452BF246DCC2900F885DE /* ContentView.swift */; };
+		71D452C2246DCC2900F885DE /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452C1246DCC2900F885DE /* HostingController.swift */; };
+		71D452C4246DCC2900F885DE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452C3246DCC2900F885DE /* ExtensionDelegate.swift */; };
+		71D452C6246DCC2900F885DE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452C5246DCC2900F885DE /* NotificationController.swift */; };
+		71D452C8246DCC2900F885DE /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452C7246DCC2900F885DE /* NotificationView.swift */; };
+		71D452CA246DCC2900F885DE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452C9246DCC2900F885DE /* ComplicationController.swift */; };
+		71D452CC246DCC2A00F885DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452CB246DCC2A00F885DE /* Assets.xcassets */; };
+		71D452CF246DCC2A00F885DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452CE246DCC2A00F885DE /* Preview Assets.xcassets */; };
+		71D452D4246DCC2B00F885DE /* SafeTimerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 71D452AE246DCC2100F885DE /* SafeTimerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		71D452BC246DCC2900F885DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7198799E2460846E003C4C49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D452B9246DCC2900F885DE;
+			remoteInfo = "SafeTimerWatch Extension";
+		};
+		71D452D2246DCC2B00F885DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7198799E2460846E003C4C49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 71D452AD246DCC2100F885DE;
+			remoteInfo = SafeTimerWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		71D452D8246DCC2B00F885DE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				71D452BB246DCC2900F885DE /* SafeTimerWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D452DC246DCC2B00F885DE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				71D452D4246DCC2B00F885DE /* SafeTimerWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temporizadores+CoreDataClass.swift"; sourceTree = "<group>"; };
+		710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temporizadores+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		7108A2AB246ED69E00C1305F /* botonIniciar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = botonIniciar.swift; sourceTree = "<group>"; };
+		7108A2AD246EF22800C1305F /* SafeTimerWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SafeTimerWatch Extension.entitlements"; sourceTree = "<group>"; };
+		7108A2AE246EF24300C1305F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		7108A2C1246F0B5C00C1305F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		713B80BB246087A600156D8D /* AjustesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesView.swift; sourceTree = "<group>"; };
+		713B80BF24608E2C00156D8D /* nuevaMascarillaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuevaMascarillaView.swift; sourceTree = "<group>"; };
+		71475BDC246C6445006B1918 /* TextBindManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindManager.swift; sourceTree = "<group>"; };
+		7147D25524703BBD001456FA /* ListaTemporizadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTemporizadores.swift; sourceTree = "<group>"; };
+		7147D25824703C86001456FA /* nTempWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nTempWatch.swift; sourceTree = "<group>"; };
+		7147D25A24704A66001456FA /* bIniciarWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bIniciarWatch.swift; sourceTree = "<group>"; };
+		7147D25C2470535D001456FA /* tempRowWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempRowWatch.swift; sourceTree = "<group>"; };
+		714E5596247473D9000FDC53 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		714E5597247473E0000FDC53 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		717834152461C2D6002E9426 /* iconoAjustes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconoAjustes.swift; sourceTree = "<group>"; };
+		717834172461C338002E9426 /* botonFuncionNoDisponible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = botonFuncionNoDisponible.swift; sourceTree = "<group>"; };
+		7178341A2461CDB8002E9426 /* AlarmaLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmaLogic.swift; sourceTree = "<group>"; };
+		7178341C2461D940002E9426 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		71783420246338AF002E9426 /* ajustesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ajustesModel.swift; sourceTree = "<group>"; };
+		717EED6E24744B8D000B0A72 /* eu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = eu; path = eu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		717F9F482471541000F937A2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		717F9F4F2471B29A00F937A2 /* creditosWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditosWatch.swift; sourceTree = "<group>"; };
+		717F9F512471BEC600F937A2 /* AppStoreReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreReviewManager.swift; sourceTree = "<group>"; };
+		71879B5224648F280050259B /* Mascarillas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Mascarillas.entitlements; sourceTree = "<group>"; };
+		71879B5424648F2D0050259B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		71879B562464915C0050259B /* mascarillaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mascarillaRow.swift; sourceTree = "<group>"; };
+		71879B80246497E60050259B /* mascarillas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mascarillas.xcdatamodel; sourceTree = "<group>"; };
+		719879A62460846E003C4C49 /* SafeTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		719879A92460846E003C4C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		719879AB2460846E003C4C49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		719879AD2460846E003C4C49 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		719879AF24608470003C4C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		719879B224608470003C4C49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		719879B524608470003C4C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		719879B724608470003C4C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		719E1D352469C80E003D5B99 /* nuevoTemporizadorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuevoTemporizadorRow.swift; sourceTree = "<group>"; };
+		71D4529C246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptsToSoftwareKeyboard.swift; sourceTree = "<group>"; };
+		71D452A2246D93EB00F885DE /* creditos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditos.swift; sourceTree = "<group>"; };
+		71D452AE246DCC2100F885DE /* SafeTimerWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeTimerWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D452B1246DCC2100F885DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		71D452B3246DCC2800F885DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D452B5246DCC2800F885DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71D452BA246DCC2900F885DE /* SafeTimerWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SafeTimerWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		71D452BF246DCC2900F885DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		71D452C1246DCC2900F885DE /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		71D452C3246DCC2900F885DE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		71D452C5246DCC2900F885DE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		71D452C7246DCC2900F885DE /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		71D452C9246DCC2900F885DE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		71D452CB246DCC2A00F885DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71D452CE246DCC2A00F885DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		71D452D0246DCC2A00F885DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		719879A32460846E003C4C49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71879B5524648F2D0050259B /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D452B7246DCC2900F885DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7108A2C2246F0B5C00C1305F /* CoreData.framework in Frameworks */,
+				7108A2AF246EF24300C1305F /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7108A2C4246F105A00C1305F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71D452BF246DCC2900F885DE /* ContentView.swift */,
+				7147D25524703BBD001456FA /* ListaTemporizadores.swift */,
+				7147D25C2470535D001456FA /* tempRowWatch.swift */,
+				7147D25824703C86001456FA /* nTempWatch.swift */,
+				717F9F4F2471B29A00F937A2 /* creditosWatch.swift */,
+				7147D25724703C20001456FA /* Supporting Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		713B80C12460982900156D8D /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				717834152461C2D6002E9426 /* iconoAjustes.swift */,
+				717834172461C338002E9426 /* botonFuncionNoDisponible.swift */,
+				71D4529C246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift */,
+				7108A2AB246ED69E00C1305F /* botonIniciar.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		7147D25724703C20001456FA /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				7147D25A24704A66001456FA /* bIniciarWatch.swift */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		717834192461CDA5002E9426 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				71783420246338AF002E9426 /* ajustesModel.swift */,
+				7178341A2461CDB8002E9426 /* AlarmaLogic.swift */,
+				71475BDC246C6445006B1918 /* TextBindManager.swift */,
+				717F9F512471BEC600F937A2 /* AppStoreReviewManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		71879B5324648F2D0050259B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7108A2C1246F0B5C00C1305F /* CoreData.framework */,
+				7108A2AE246EF24300C1305F /* CloudKit.framework */,
+				71879B5424648F2D0050259B /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7198799D2460846E003C4C49 = {
+			isa = PBXGroup;
+			children = (
+				717F9F492471541000F937A2 /* Localizable.strings */,
+				710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */,
+				710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */,
+				71879B7F246497E60050259B /* Mascarillas.xcdatamodeld */,
+				719879A82460846E003C4C49 /* SafeTimer */,
+				71D452AF246DCC2100F885DE /* SafeTimerWatch */,
+				71D452BE246DCC2900F885DE /* SafeTimerWatch Extension */,
+				719879A72460846E003C4C49 /* Products */,
+				71879B5324648F2D0050259B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		719879A72460846E003C4C49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				719879A62460846E003C4C49 /* SafeTimer.app */,
+				71D452AE246DCC2100F885DE /* SafeTimerWatch.app */,
+				71D452BA246DCC2900F885DE /* SafeTimerWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		719879A82460846E003C4C49 /* SafeTimer */ = {
+			isa = PBXGroup;
+			children = (
+				71879B5224648F280050259B /* Mascarillas.entitlements */,
+				719879A92460846E003C4C49 /* AppDelegate.swift */,
+				719879AB2460846E003C4C49 /* SceneDelegate.swift */,
+				717834192461CDA5002E9426 /* Model */,
+				719879BE24608635003C4C49 /* View */,
+				719879AF24608470003C4C49 /* Assets.xcassets */,
+				719879B424608470003C4C49 /* LaunchScreen.storyboard */,
+				7178341C2461D940002E9426 /* Constants.swift */,
+				719879B724608470003C4C49 /* Info.plist */,
+				719879B124608470003C4C49 /* Preview Content */,
+			);
+			path = SafeTimer;
+			sourceTree = "<group>";
+		};
+		719879B124608470003C4C49 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				719879B224608470003C4C49 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		719879BE24608635003C4C49 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				719E1D342469C7DD003D5B99 /* Home */,
+				713B80BF24608E2C00156D8D /* nuevaMascarillaView.swift */,
+				71D452A1246D93C000F885DE /* Ajustes */,
+				713B80C12460982900156D8D /* Supporting Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		719E1D342469C7DD003D5B99 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				719879AD2460846E003C4C49 /* HomeView.swift */,
+				71879B562464915C0050259B /* mascarillaRow.swift */,
+				719E1D352469C80E003D5B99 /* nuevoTemporizadorRow.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		71D452A1246D93C000F885DE /* Ajustes */ = {
+			isa = PBXGroup;
+			children = (
+				713B80BB246087A600156D8D /* AjustesView.swift */,
+				71D452A2246D93EB00F885DE /* creditos.swift */,
+			);
+			path = Ajustes;
+			sourceTree = "<group>";
+		};
+		71D452AF246DCC2100F885DE /* SafeTimerWatch */ = {
+			isa = PBXGroup;
+			children = (
+				71D452B0246DCC2100F885DE /* Interface.storyboard */,
+				71D452B3246DCC2800F885DE /* Assets.xcassets */,
+				71D452B5246DCC2800F885DE /* Info.plist */,
+			);
+			path = SafeTimerWatch;
+			sourceTree = "<group>";
+		};
+		71D452BE246DCC2900F885DE /* SafeTimerWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7108A2AD246EF22800C1305F /* SafeTimerWatch Extension.entitlements */,
+				71D452C3246DCC2900F885DE /* ExtensionDelegate.swift */,
+				7108A2C4246F105A00C1305F /* View */,
+				71D452C1246DCC2900F885DE /* HostingController.swift */,
+				71D452C5246DCC2900F885DE /* NotificationController.swift */,
+				71D452C7246DCC2900F885DE /* NotificationView.swift */,
+				71D452C9246DCC2900F885DE /* ComplicationController.swift */,
+				71D452CB246DCC2A00F885DE /* Assets.xcassets */,
+				71D452D0246DCC2A00F885DE /* Info.plist */,
+				71D452CD246DCC2A00F885DE /* Preview Content */,
+			);
+			path = "SafeTimerWatch Extension";
+			sourceTree = "<group>";
+		};
+		71D452CD246DCC2A00F885DE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				71D452CE246DCC2A00F885DE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		719879A52460846E003C4C49 /* SafeTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 719879BA24608470003C4C49 /* Build configuration list for PBXNativeTarget "SafeTimer" */;
+			buildPhases = (
+				719879A22460846E003C4C49 /* Sources */,
+				719879A32460846E003C4C49 /* Frameworks */,
+				719879A42460846E003C4C49 /* Resources */,
+				71D452DC246DCC2B00F885DE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D452D3246DCC2B00F885DE /* PBXTargetDependency */,
+			);
+			name = SafeTimer;
+			packageProductDependencies = (
+			);
+			productName = Mascarillas;
+			productReference = 719879A62460846E003C4C49 /* SafeTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71D452AD246DCC2100F885DE /* SafeTimerWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D452D9246DCC2B00F885DE /* Build configuration list for PBXNativeTarget "SafeTimerWatch" */;
+			buildPhases = (
+				71D452AC246DCC2100F885DE /* Resources */,
+				71D452D8246DCC2B00F885DE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				71D452BD246DCC2900F885DE /* PBXTargetDependency */,
+			);
+			name = SafeTimerWatch;
+			productName = SafeTimerWatch;
+			productReference = 71D452AE246DCC2100F885DE /* SafeTimerWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		71D452B9246DCC2900F885DE /* SafeTimerWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71D452D5246DCC2B00F885DE /* Build configuration list for PBXNativeTarget "SafeTimerWatch Extension" */;
+			buildPhases = (
+				71D452B6246DCC2900F885DE /* Sources */,
+				71D452B7246DCC2900F885DE /* Frameworks */,
+				71D452B8246DCC2900F885DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SafeTimerWatch Extension";
+			productName = "SafeTimerWatch Extension";
+			productReference = 71D452BA246DCC2900F885DE /* SafeTimerWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7198799E2460846E003C4C49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Asier G. Morato";
+				TargetAttributes = {
+					719879A52460846E003C4C49 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					71D452AD246DCC2100F885DE = {
+						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
+					};
+					71D452B9246DCC2900F885DE = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 719879A12460846E003C4C49 /* Build configuration list for PBXProject "SafeTimer" */;
+			compatibilityVersion = "Xcode 11.4";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				eu,
+				es,
+				fr,
+			);
+			mainGroup = 7198799D2460846E003C4C49;
+			packageReferences = (
+			);
+			productRefGroup = 719879A72460846E003C4C49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				719879A52460846E003C4C49 /* SafeTimer */,
+				71D452AD246DCC2100F885DE /* SafeTimerWatch */,
+				71D452B9246DCC2900F885DE /* SafeTimerWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		719879A42460846E003C4C49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717F9F452471541000F937A2 /* Localizable.strings in Resources */,
+				719879B624608470003C4C49 /* LaunchScreen.storyboard in Resources */,
+				719879B324608470003C4C49 /* Preview Assets.xcassets in Resources */,
+				7108A2BC246F074600C1305F /* Assets.xcassets in Resources */,
+				719879B024608470003C4C49 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D452AC246DCC2100F885DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D452B4246DCC2800F885DE /* Assets.xcassets in Resources */,
+				717F9F462471541000F937A2 /* Localizable.strings in Resources */,
+				7108A2BE246F075700C1305F /* Assets.xcassets in Resources */,
+				71D452B2246DCC2100F885DE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D452B8246DCC2900F885DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				717F9F472471541000F937A2 /* Localizable.strings in Resources */,
+				71D452CF246DCC2A00F885DE /* Preview Assets.xcassets in Resources */,
+				7108A2BD246F074700C1305F /* Assets.xcassets in Resources */,
+				7108A2BF246F075800C1305F /* Assets.xcassets in Resources */,
+				71D452CC246DCC2A00F885DE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		719879A22460846E003C4C49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				710175622470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */,
+				719879AA2460846E003C4C49 /* AppDelegate.swift in Sources */,
+				71D4529D246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift in Sources */,
+				7108A2AC246ED69E00C1305F /* botonIniciar.swift in Sources */,
+				71879B81246497E60050259B /* Mascarillas.xcdatamodeld in Sources */,
+				710175642470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */,
+				7178341D2461D940002E9426 /* Constants.swift in Sources */,
+				719879AC2460846E003C4C49 /* SceneDelegate.swift in Sources */,
+				717834162461C2D6002E9426 /* iconoAjustes.swift in Sources */,
+				717F9F522471BEC600F937A2 /* AppStoreReviewManager.swift in Sources */,
+				713B80BC246087A600156D8D /* AjustesView.swift in Sources */,
+				71879B572464915C0050259B /* mascarillaRow.swift in Sources */,
+				719E1D362469C80E003D5B99 /* nuevoTemporizadorRow.swift in Sources */,
+				7178341B2461CDB8002E9426 /* AlarmaLogic.swift in Sources */,
+				719879AE2460846E003C4C49 /* HomeView.swift in Sources */,
+				717834182461C338002E9426 /* botonFuncionNoDisponible.swift in Sources */,
+				71475BDD246C6445006B1918 /* TextBindManager.swift in Sources */,
+				71D452A3246D93EB00F885DE /* creditos.swift in Sources */,
+				713B80C024608E2C00156D8D /* nuevaMascarillaView.swift in Sources */,
+				71783421246338AF002E9426 /* ajustesModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D452B6246DCC2900F885DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71D452C2246DCC2900F885DE /* HostingController.swift in Sources */,
+				7147D25D2470535D001456FA /* tempRowWatch.swift in Sources */,
+				7108A2C0246F08CC00C1305F /* Constants.swift in Sources */,
+				7108A2B3246F073100C1305F /* TextBindManager.swift in Sources */,
+				71D452C0246DCC2900F885DE /* ContentView.swift in Sources */,
+				710DE7B8247017DB000AE643 /* Mascarillas.xcdatamodeld in Sources */,
+				71D452C6246DCC2900F885DE /* NotificationController.swift in Sources */,
+				7147D25924703C86001456FA /* nTempWatch.swift in Sources */,
+				710175652470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */,
+				71D452C4246DCC2900F885DE /* ExtensionDelegate.swift in Sources */,
+				7108A2B1246F071900C1305F /* ajustesModel.swift in Sources */,
+				7108A2B2246F073100C1305F /* AlarmaLogic.swift in Sources */,
+				71D452C8246DCC2900F885DE /* NotificationView.swift in Sources */,
+				7147D25624703BBD001456FA /* ListaTemporizadores.swift in Sources */,
+				717F9F502471B29A00F937A2 /* creditosWatch.swift in Sources */,
+				710175632470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */,
+				7147D25B24704A66001456FA /* bIniciarWatch.swift in Sources */,
+				71D452CA246DCC2900F885DE /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		71D452BD246DCC2900F885DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D452B9246DCC2900F885DE /* SafeTimerWatch Extension */;
+			targetProxy = 71D452BC246DCC2900F885DE /* PBXContainerItemProxy */;
+		};
+		71D452D3246DCC2B00F885DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 71D452AD246DCC2100F885DE /* SafeTimerWatch */;
+			targetProxy = 71D452D2246DCC2B00F885DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		717F9F492471541000F937A2 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				717F9F482471541000F937A2 /* en */,
+				717EED6E24744B8D000B0A72 /* eu */,
+				714E5596247473D9000FDC53 /* es */,
+				714E5597247473E0000FDC53 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		719879B424608470003C4C49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				719879B524608470003C4C49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		71D452B0246DCC2100F885DE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71D452B1246DCC2100F885DE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		719879B824608470003C4C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		719879B924608470003C4C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		719879BB24608470003C4C49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SafeTimer/Mascarillas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = XC5399ZLE3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SafeTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas;
+				PRODUCT_NAME = SafeTimer;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		719879BC24608470003C4C49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SafeTimer/Mascarillas.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeTimer/Preview Content\"";
+				DEVELOPMENT_TEAM = XC5399ZLE3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SafeTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas;
+				PRODUCT_NAME = SafeTimer;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		71D452D6246DCC2B00F885DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SafeTimerWatch Extension/SafeTimerWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeTimerWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = XC5399ZLE3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SafeTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		71D452D7246DCC2B00F885DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "SafeTimerWatch Extension/SafeTimerWatch Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_ASSET_PATHS = "\"SafeTimerWatch Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = XC5399ZLE3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "SafeTimerWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit.extension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		71D452DA246DCC2B00F885DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = XC5399ZLE3;
+				IBSC_MODULE = SafeTimerWatch_Extension;
+				INFOPLIST_FILE = SafeTimerWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SafeTimerWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		71D452DB246DCC2B00F885DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 3;
+				DEVELOPMENT_TEAM = XC5399ZLE3;
+				IBSC_MODULE = SafeTimerWatch_Extension;
+				INFOPLIST_FILE = SafeTimerWatch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SafeTimerWatch-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		719879A12460846E003C4C49 /* Build configuration list for PBXProject "SafeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719879B824608470003C4C49 /* Debug */,
+				719879B924608470003C4C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		719879BA24608470003C4C49 /* Build configuration list for PBXNativeTarget "SafeTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719879BB24608470003C4C49 /* Debug */,
+				719879BC24608470003C4C49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D452D5246DCC2B00F885DE /* Build configuration list for PBXNativeTarget "SafeTimerWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D452D6246DCC2B00F885DE /* Debug */,
+				71D452D7246DCC2B00F885DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71D452D9246DCC2B00F885DE /* Build configuration list for PBXNativeTarget "SafeTimerWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71D452DA246DCC2B00F885DE /* Debug */,
+				71D452DB246DCC2B00F885DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		71879B7F246497E60050259B /* Mascarillas.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				71879B80246497E60050259B /* mascarillas.xcdatamodel */,
+			);
+			currentVersion = 71879B80246497E60050259B /* mascarillas.xcdatamodel */;
+			path = Mascarillas.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7198799E2460846E003C4C49 /* Project object */;
+}

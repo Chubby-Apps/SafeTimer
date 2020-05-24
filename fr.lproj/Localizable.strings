@@ -1,0 +1,31 @@
+/*
+  Localizable.strings
+  SafeTimer
+
+  Created by Asier G. Morato on 17/05/2020.
+  Copyright © 2020 Asier G. Morato. All rights reserved.
+*/
+
+"usoRestante" = "Usage restant";
+"nuevoTempL" = "Nouveau temporisateur";
+"nuevoTempS" = "Nouveau temp.";
+"anadir" = "Ajouter";
+"nombre" = "Nom";
+"utensilio" = "Outil";
+"duracion" = "Durée";
+"horas" = "heures";
+"h" = "h";
+"iniciar" = "Commencer";
+"ajustes" = "Réglages";
+"valoraApp" = "Évaluer l’application";
+"visitaNuestraWeb" = "Visitez notre site Internet";
+"creditos" = "Crédits";
+"politicaPrivacidad" = "Politique de confidentialité";
+"hechoConAmor" = "Fait avec ❤️ à Vitoria-Gasteiz, Espagne.";
+"enviarFeedback" = "Envoyer des commentaires";
+"tCredito" = "⏰ SafeTimer a été développé de manière altruiste par Hortelanos pour aider à contrôler la durée de vie restante des outils et équipements qui doivent être changés après quelques heures.";
+"asier" = "👨🏻‍💻 Code par Asier G. Morato.";
+"patricia" = "🧑🏻‍🎨 Design par Patricia Bedoya.";
+"fNoDisponible" = "Fonction non disponible";
+"fNoDisponibleExplicacion" = "Cette fonction sera disponible plus tard.";
+"aceptar" = "Ok";
