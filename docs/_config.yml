@@ -12,7 +12,7 @@ presskit_download_link                    : https://www.dropbox.com/sh/m84zitsgz
 app_icon                                  : assets/appicon.png                        # Automatically populates if not set and if iOS app ID is set.  Otherwise enter path to icon file manually.
 app_name                                  : SafeTimer                                 # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
 app_price                                 : Gratis                                    # Automatically populates if not set and if iOS app ID is set.  Otherwise enter manually.
-app_description                           : La app que te ayuda a controlar el uso de mascarillas diseñada y desarrollada por Hortelanos.
+app_description                           : La app que te ayuda a controlar el uso de mascarillas. Diseñada y desarrollada por Hortelanos.
 
 enable_smart_app_banner                   : true                                      # Set to true to show a smart app banner at top of page on mobile devices.
 
