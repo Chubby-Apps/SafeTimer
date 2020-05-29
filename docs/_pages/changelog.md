@@ -24,6 +24,10 @@ SafeTimer es una app para iPhone y Apple Watch que te ayuda a controlar el tiemp
 <br>
 
 ## Version 1.0.1
-Pequeños arreglos y mejoras.
+- Pequeños arreglos y mejoras.
+
+## Versión 1.0.2
+- Añadida traducción al Catalán.
+- Mejorada la accesibilidad con VoiceOver.
 
 <br>
