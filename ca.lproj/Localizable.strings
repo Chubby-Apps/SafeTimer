@@ -15,7 +15,7 @@
 "duracion" = "Duració";
 "horas" = "hores";
 "h" = "h";
-"iniciar" = "Iniciar";
+"iniciar" = "Inicia";
 "ajustes" = "Paràmetres";
 "valoraApp" = "Valoreu l'aplicació";
 "visitaNuestraWeb" = "Visiteu la nuestra web";
@@ -29,3 +29,8 @@
 "fNoDisponible" = "Funció no disponible";
 "fNoDisponibleExplicacion" = "Aquesta funció estarà disponible més endavant.";
 "aceptar" = "Acceptar";
+"cerrar" = "Tancar";
+"play" = "Inicia";
+"pause" = "Para";
+"timeToChange" = "És hora de canviar";
+"enoughUse" = "Ja ho has utilitzat el temps suficient";
