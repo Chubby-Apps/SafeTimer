@@ -32,6 +32,7 @@ struct AjustesView: View {
                         }
                         Spacer()
                         Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                            .accessibility(hidden: true)
                     }
                     HStack {
                         iconoAjustes(icono: "globe", colorFondo: Color(.systemGreen))
@@ -43,6 +44,7 @@ struct AjustesView: View {
                         }
                         Spacer()
                         Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                            .accessibility(hidden: true)
                     }
                     HStack {
                         NavigationLink(destination: creditos(cerrar: self.$cerrar)) {
@@ -64,6 +66,7 @@ struct AjustesView: View {
                         }
                         Spacer()
                         Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                            .accessibility(hidden: true)
                     }
                     HStack {
                         iconoAjustes(icono: "envelope.fill", colorFondo: Color(.systemGray))
@@ -75,12 +78,13 @@ struct AjustesView: View {
                         }
                         Spacer()
                         Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                            .accessibility(hidden: true)
                     }
                 }
             }
                 
             .navigationBarTitle("ajustes")
-            .navigationBarItems(trailing: Button(action: {self.cerrar = false}) {Image(systemName: "xmark.circle.fill").font(.system(size: 25)).foregroundColor(Color(.systemRed))})
+            .navigationBarItems(trailing: Button(action: {self.cerrar = false}) {Image(systemName: "xmark.circle.fill").font(.system(size: 25)).foregroundColor(Color(.systemRed)).accessibility(label: Text("cerrar"))})
         }
     }
 }

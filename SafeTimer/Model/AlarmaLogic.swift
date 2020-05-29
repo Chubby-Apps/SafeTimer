@@ -25,8 +25,8 @@ struct AlarmaLogic {
         let center = UNUserNotificationCenter.current()
         let addRequest = {
             let content = UNMutableNotificationContent()
-            content.title = "Es hora de cambiar"
-            content.body = "Ya lo has usado el tiempo suficiente"
+            content.title = NSString.localizedUserNotificationString(forKey: "timeToChange", arguments: nil)
+            content.body = NSString.localizedUserNotificationString(forKey: "enoughUse", arguments: nil)
             content.categoryIdentifier = Keys.categoriaNotificacion
             content.sound = UNNotificationSound.default
             

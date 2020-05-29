@@ -124,6 +124,7 @@
 		7147D25C2470535D001456FA /* tempRowWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tempRowWatch.swift; sourceTree = "<group>"; };
 		714E5596247473D9000FDC53 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		714E5597247473E0000FDC53 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7153A842247C713B0069F66A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		717834152461C2D6002E9426 /* iconoAjustes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iconoAjustes.swift; sourceTree = "<group>"; };
 		717834172461C338002E9426 /* botonFuncionNoDisponible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = botonFuncionNoDisponible.swift; sourceTree = "<group>"; };
 		7178341A2461CDB8002E9426 /* AlarmaLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmaLogic.swift; sourceTree = "<group>"; };
@@ -443,6 +444,7 @@
 				eu,
 				es,
 				fr,
+				ca,
 			);
 			mainGroup = 7198799D2460846E003C4C49;
 			packageReferences = (
@@ -572,6 +574,7 @@
 				717EED6E24744B8D000B0A72 /* eu */,
 				714E5596247473D9000FDC53 /* es */,
 				714E5597247473E0000FDC53 /* fr */,
+				7153A842247C713B0069F66A /* ca */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -727,7 +730,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas;
 				PRODUCT_NAME = SafeTimer;
 				SWIFT_VERSION = 5.0;
@@ -751,7 +754,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas;
 				PRODUCT_NAME = SafeTimer;
 				SWIFT_VERSION = 5.0;
@@ -775,7 +778,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -802,7 +805,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
@@ -829,7 +832,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -858,7 +861,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;

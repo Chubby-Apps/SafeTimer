@@ -150,6 +150,7 @@ struct tempRowWatch: View {
                         Image(systemName: self.datos.enUso ? "pause.fill" : "play.fill")
                             .font(.system(size: 25))
                             .foregroundColor(Color(.white))
+                            .accessibility(label: self.datos.enUso ? Text("Pause") : Text("Play"))
                     }.scaledToFill()
                 }.buttonStyle(PlainButtonStyle())
             }.frame(height: 80).frame(width: width-20)

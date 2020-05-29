@@ -23,6 +23,7 @@ struct iconoAjustes: View {
                 .font(.system(size: tamanoIcono ?? 20))
                 .foregroundColor(Color.white)
                 .offset(x: offsetX ?? 0, y: offsetY ?? 0)
+                .accessibility(hidden: true)
         }.frame(width: 35, height: 35, alignment: .center)
     }
 }

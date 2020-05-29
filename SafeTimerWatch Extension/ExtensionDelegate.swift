@@ -17,9 +17,9 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, UNUserNotificationCenter
     func applicationDidFinishLaunching() {
         // Notificaciones
                UNUserNotificationCenter.current().delegate = self
-               let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: "Cerrar", options: [.destructive])
-               let nuevaMascarillaAccion = UNNotificationAction(identifier: Keys.nuevaMascarillaAccion, title: "Iniciar nuevo temporizador", options: [.foreground])
-               let category = UNNotificationCategory(identifier: Keys.categoriaNotificacion, actions: [nuevaMascarillaAccion, pararTemporizadorAccion], intentIdentifiers: [], options: [])
+//               let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: "Cerrar", options: [.destructive])
+               let nuevaMascarillaAccion = UNNotificationAction(identifier: Keys.nuevaMascarillaAccion, title: NSString.localizedUserNotificationString(forKey: "nuevoTempL", arguments: nil), options: [.foreground])
+               let category = UNNotificationCategory(identifier: Keys.categoriaNotificacion, actions: [nuevaMascarillaAccion], intentIdentifiers: [], options: [])
                UNUserNotificationCenter.current().setNotificationCategories([category])
     }
 

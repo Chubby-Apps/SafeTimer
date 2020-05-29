@@ -71,7 +71,7 @@ struct nuevaMascarillaView: View {
                 }
                 .navigationBarItems(trailing: EmptyView())
                 .navigationBarTitle("anadir", displayMode: .large)
-                .navigationBarItems(trailing: Button(action: {self.cerrar = false}) {Image(systemName: "xmark.circle.fill").font(.system(size: 25)).foregroundColor(Color(.systemRed))})
+                .navigationBarItems(trailing: Button(action: {self.cerrar = false}) {Image(systemName: "xmark.circle.fill").font(.system(size: 25)).foregroundColor(Color(.systemRed)).accessibility(label: Text("cerrar"))})
                 .modifier(AdaptsToSoftwareKeyboard())
             }
         }

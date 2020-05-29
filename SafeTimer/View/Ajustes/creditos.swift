@@ -17,7 +17,8 @@ struct creditos: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 110, height: 110)
-                Text("v1.0.1")
+                    .accessibility(label: Text("Logo SafeTimer"))
+                Text("v1.0.2")
                     .font(.headline)
                     .bold()
                 Spacer().frame(height: 20)
@@ -47,7 +48,7 @@ struct creditos: View {
             }
                 
         .navigationBarTitle("creditos")
-            .navigationBarItems(trailing: Button(action: {self.cerrar = false}) {Image(systemName: "xmark.circle.fill").font(.system(size: 25)).foregroundColor(Color(.systemRed))})
+            .navigationBarItems(trailing: Button(action: {self.cerrar = false}) {Image(systemName: "xmark.circle.fill").font(.system(size: 25)).foregroundColor(Color(.systemRed)).accessibility(label: Text("cerrar"))})
         }
     }
 }

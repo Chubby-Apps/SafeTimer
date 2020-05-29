@@ -31,7 +31,7 @@ struct HomeView: View {
     }
     
     var body: some View {
-        ZStack {
+//        ZStack {
             NavigationView {
                 List {
                     ForEach(self.tMascarillas, id: \.self) { (mascarilla) in
@@ -43,26 +43,27 @@ struct HomeView: View {
                 }.buttonStyle(BorderlessButtonStyle())
                     
                 .navigationBarTitle("SafeTimer")
-                .navigationBarItems(leading: Button(action: {self.activeSheet = .ajustes; self.showSheet.toggle()}) {Image(systemName: "gear").font(.system(size: 25))}
+                .navigationBarItems(leading: Button(action: {self.activeSheet = .ajustes; self.showSheet.toggle()}) {Image(systemName: "gear").font(.system(size: 25)).accessibility(label: Text("ajustes"))}
                     ,trailing: EditButton())
                 
                 
             }
-            VStack(alignment: .trailing) {
-                Spacer()
-                HStack {
-                    Spacer()
-                    Button(action: {self.activeSheet = .nuevaMascarilla; self.showSheet.toggle()}) {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.system(size: 50.0))
-                            .foregroundColor(Color.blue)
-                    }
-                    .padding()
-                    Spacer()
-                }
-            }
-            
-        }
+//            VStack(alignment: .trailing) {
+//                Spacer()
+//                HStack {
+//                    Spacer()
+//                    Button(action: {self.activeSheet = .nuevaMascarilla; self.showSheet.toggle()}) {
+//                        Image(systemName: "plus.circle.fill")
+//                            .font(.system(size: 50.0))
+//                            .foregroundColor(Color.blue)
+//                            .accessibility(label: Text("nuevoTempL"))
+//                    }
+//                    .padding()
+//                    Spacer()
+//                }
+//            }
+//
+//        }
         .onAppear {
             NotificationCenter.default.addObserver(forName: NSNotification.Name("nuevaMascarilla"), object: nil, queue: .main) {_ in
                 self.activeSheet = .nuevaMascarilla

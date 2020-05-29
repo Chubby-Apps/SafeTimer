@@ -20,8 +20,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // Notificaciones
         UNUserNotificationCenter.current().delegate = self
-        let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: "Cerrar", options: [.destructive])
-        let nuevaMascarillaAccion = UNNotificationAction(identifier: Keys.nuevaMascarillaAccion, title: "Iniciar nuevo temporizador", options: [.foreground])
+        let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: NSString.localizedUserNotificationString(forKey: "cerrar", arguments: nil), options: [.destructive])
+        let nuevaMascarillaAccion = UNNotificationAction(identifier: Keys.nuevaMascarillaAccion, title: NSString.localizedUserNotificationString(forKey: "nuevoTempL", arguments: nil), options: [.foreground])
         let category = UNNotificationCategory(identifier: Keys.categoriaNotificacion, actions: [nuevaMascarillaAccion, pararTemporizadorAccion], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([category])
         

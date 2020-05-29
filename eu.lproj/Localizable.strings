@@ -25,7 +25,12 @@
 "enviarFeedback" = "Bidali zure iritzia";
 "tCredito" = "⏰ Safe Timer guztiz dohanik da eta Hortelanos enpresak garatu du. Aplikazio honek hainbat tresnen denbora erabilgarria kontrolatzera laguntzen dizu. Batez ere, aldiro aldatu behar direnak.";
 "asier" = "👨🏻‍💻 Garapena Asier G. Morato-ren eskutik.";
-"patricia" = "🧑🏻‍🎨 Diseinua Patricia Bedoya-ren eskutik.";
+"patricia" = "👩🏻‍🎨 Diseinua Patricia Bedoya-ren eskutik.";
 "fNoDisponible" = "Erabilgarritasuna ez dago eskura";
 "fNoDisponibleExplicacion" = "Erabilgarritasun hau garatzen ari gara. Laster prest izango da.";
 "aceptar" = "Onartu";
+"cerrar" = "Itxi";
+"play" = "Hasi";
+"pause" = "Gelditu";
+"timeToChange" = "Aldatzeko garaia da";
+"enoughUse" = "Nahiko denbora erabili duzu.";

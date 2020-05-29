@@ -65,6 +65,7 @@ struct mascarillaRow: View {
                                     .frame(width: 45, height: 45)
                                     .foregroundColor(Color(.systemGreen))
                                     .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                                    .accessibility(hidden: true)
                             } else {
                                 Circle()
                                     .trim(from: 1 - (self.porcentajeProgresoEnMarcha), to: 1)
@@ -77,6 +78,7 @@ struct mascarillaRow: View {
                                     .frame(width: 45, height: 45)
                                     .foregroundColor(Color(.systemRed))
                                     .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                                    .accessibility(hidden: true)
                             }
                             
                         } else {
@@ -92,6 +94,7 @@ struct mascarillaRow: View {
                                     .frame(width: 45, height: 45)
                                     .foregroundColor(Color(.systemGreen))
                                     .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
+                                    .accessibility(hidden: true)
                             } else {
                                 Circle()
                                     .trim(from: 1 - (self.porcentajeProgresoParado), to: 1)
@@ -104,7 +107,7 @@ struct mascarillaRow: View {
                                     .frame(width: 45, height: 45)
                                     .foregroundColor(Color(.systemRed))
                                     .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                                
+                                    .accessibility(hidden: true)
                             }
                         }
                     }.padding(.vertical, 9).padding(.trailing, 5)
@@ -116,15 +119,18 @@ struct mascarillaRow: View {
                             Text(self.tiempoRestanteString)
                                 .font(.largeTitle)
                                 .bold()
+                            .accessibility(label: Text("usoRestante")+Text(self.tiempoRestanteString))
                         } else {
                             Text(self.tiempoRestanteString)
                                 .font(.largeTitle)
                                 .bold()
                                 .foregroundColor(Color(.systemRed))
+                                .accessibility(label: Text("usoRestante")+Text(self.tiempoRestanteString))
                         }
                         Text("usoRestante")
                             .font(.caption)
                             .foregroundColor(Color(.systemGray))
+                            .accessibility(hidden: true)
                     }
                     .padding(.leading, 5).padding(.vertical, 12)
                     
@@ -156,6 +162,7 @@ struct mascarillaRow: View {
                         Image(systemName: self.datos.enUso ? "pause.circle" : "play.circle")
                             .font(.system(size: 50))
                             .foregroundColor(self.datos.enUso ? Color(.systemOrange) : Color(.systemBlue))
+                            .accessibility(label: self.datos.enUso ? Text("pause") : Text("play"))
                     }
                 }.padding(.horizontal)
             }.background(Color("nTempRowC")).cornerRadius(20).frame(height: 90)

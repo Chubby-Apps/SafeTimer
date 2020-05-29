@@ -25,7 +25,12 @@
 "enviarFeedback" = "Envoyer des commentaires";
 "tCredito" = "⏰ SafeTimer a été développé de manière altruiste par Hortelanos pour aider à contrôler la durée de vie restante des outils et équipements qui doivent être changés après quelques heures.";
 "asier" = "👨🏻‍💻 Code par Asier G. Morato.";
-"patricia" = "🧑🏻‍🎨 Design par Patricia Bedoya.";
+"patricia" = "👩🏻‍🎨 Design par Patricia Bedoya.";
 "fNoDisponible" = "Fonction non disponible";
 "fNoDisponibleExplicacion" = "Cette fonction sera disponible plus tard.";
 "aceptar" = "Ok";
+"cerrar" = "Fermer";
+"play" = "Commencer";
+"pause" = "Arrête";
+"timeToChange" = "Il est temps de changer";
+"enoughUse" = "Vous l’avez utilisé assez longtemps.";
