@@ -11,10 +11,8 @@ import SwiftUI
 
 final class ajustesModel: ObservableObject {
     private enum Keys {
-        static let quirurgica = "quirurgica"
-        static let FFP2 = "FFP2"
-        static let FFP3 = "FFP3"
-        static let otro = "otro"
+        static let notificacionRecordatorio = "notificacionRecordatorio"
+        static let numeroDeUsos = "numeroDeUsos"
     }
     
     private let cancellable: Cancellable
@@ -25,10 +23,8 @@ final class ajustesModel: ObservableObject {
         self.defaults = defaults
         
         defaults.register(defaults: [
-            Keys.quirurgica: 4,
-            Keys.FFP2: 8,
-            Keys.FFP3: 8,
-            Keys.otro: 4,
+            Keys.notificacionRecordatorio: true,
+            Keys.numeroDeUsos: false,
         ])
         
         cancellable = NotificationCenter.default
@@ -38,21 +34,13 @@ final class ajustesModel: ObservableObject {
     }
     
     //MARK: - Valores
-    var quirurgica: Int {
-        set { defaults.set(newValue, forKey: Keys.quirurgica) }
-        get { defaults.integer(forKey: Keys.quirurgica) }
+    var notificacionRecordatorio: Bool {
+        set { defaults.set(newValue, forKey: Keys.notificacionRecordatorio) }
+        get { defaults.bool(forKey: Keys.notificacionRecordatorio) }
     }
-    var ffp2: Int {
-        set { defaults.set(newValue, forKey: Keys.FFP2) }
-        get { defaults.integer(forKey: Keys.FFP2) }
-    }
-    var ffp3: Int {
-        set { defaults.set(newValue, forKey: Keys.FFP3) }
-        get { defaults.integer(forKey: Keys.FFP3) }
-    }
-    var otro: Int {
-        set { defaults.set(newValue, forKey: Keys.otro) }
-        get { defaults.integer(forKey: Keys.otro) }
+    var numeroDeUsos: Bool {
+        set { defaults.set(newValue, forKey: Keys.numeroDeUsos) }
+        get { defaults.bool(forKey: Keys.numeroDeUsos) }
     }
 }
 

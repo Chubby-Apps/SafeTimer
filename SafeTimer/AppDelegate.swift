@@ -20,9 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         // Notificaciones
         UNUserNotificationCenter.current().delegate = self
-        let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: NSString.localizedUserNotificationString(forKey: "cerrar", arguments: nil), options: [.destructive])
+        let cerrarTemporizadorAccion = UNNotificationAction(identifier: Keys.cerrarTemporizadorAccion, title: NSString.localizedUserNotificationString(forKey: "cerrar", arguments: nil), options: [.destructive])
+        let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: NSString.localizedUserNotificationString(forKey: "pause", arguments: nil), options: [.foreground])
         let nuevaMascarillaAccion = UNNotificationAction(identifier: Keys.nuevaMascarillaAccion, title: NSString.localizedUserNotificationString(forKey: "nuevoTempL", arguments: nil), options: [.foreground])
-        let category = UNNotificationCategory(identifier: Keys.categoriaNotificacion, actions: [nuevaMascarillaAccion, pararTemporizadorAccion], intentIdentifiers: [], options: [])
+        let category = UNNotificationCategory(identifier: Keys.categoriaNotificacion, actions: [nuevaMascarillaAccion, pararTemporizadorAccion, cerrarTemporizadorAccion], intentIdentifiers: [], options: [])
         UNUserNotificationCenter.current().setNotificationCategories([category])
         
         return true
@@ -43,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         willPresent notification: UNNotification,
         withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions)
         -> Void) {
-        completionHandler([.alert, .badge, .sound])
+        completionHandler([.banner, .badge, .sound])
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
@@ -53,6 +54,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
             
         } else if response.actionIdentifier == Keys.pararTemporizadorAccion {
             
+            let ids = response.notification.request.identifier
+            
+            let userInfo = [ "id" : response.notification.request.identifier ]
+            
+            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [ids, "\(ids)5", "\(ids)10", "\(ids)30", "\(ids)60"])
+            UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: [ids, "\(ids)5", "\(ids)10", "\(ids)30", "\(ids)60"])
+            NotificationCenter.default.post(name: NSNotification.Name("pararDesdeNotificacion"), object: nil, userInfo: userInfo)
         }
         
         completionHandler()

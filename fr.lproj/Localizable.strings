@@ -15,6 +15,8 @@
 "duracion" = "Durée";
 "horas" = "heures";
 "h" = "h";
+"minutos" = "minutes";
+"m" = "m";
 "iniciar" = "Commencer";
 "ajustes" = "Réglages";
 "valoraApp" = "Évaluer l’application";
@@ -34,3 +36,17 @@
 "pause" = "Arrête";
 "timeToChange" = "Il est temps de changer";
 "enoughUse" = "Vous l’avez utilisé assez longtemps.";
+"menos" = "moins";
+"usoDeMas" = "Temps d'usage dépassé";
+"notificaciones" = "ALERTES";
+"notificacionesRecurrentes" = "Multiples rappels";
+"notificacionesInfo" = "En activant cette option, SafeTimer vous avertira plusieurs fois (5m, 10m, 30m et jusqu'à 1h après) que votre temporisateur s'est écoulé, ceci  jusqu'à ce que vous l'arretiez.";
+"borrar" = "Effacer";
+"seguroBorrar" = "Êtes vous sûr de vouloir effacer ce temporisateur ? Cette action ne pourra pas être défaite";
+"cancelar" = "Annuler";
+"reiniciar" = "Réinitialiser";
+"duplicar" = "Dupliquer";
+"temporizadores" = "TEMPORISATEURS";
+"contarUsos" = "Compter les usages du temporisateur";
+"mostrarUsos" = "Montrer les usages";
+"nUsos" = "Nombre d'usages:";

@@ -12,21 +12,20 @@ import UserNotifications
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate, UNUserNotificationCenterDelegate {
 
-    lazy var ajustes = ajustesModel()
-    
     func applicationDidFinishLaunching() {
         // Notificaciones
-               UNUserNotificationCenter.current().delegate = self
-//               let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: "Cerrar", options: [.destructive])
-               let nuevaMascarillaAccion = UNNotificationAction(identifier: Keys.nuevaMascarillaAccion, title: NSString.localizedUserNotificationString(forKey: "nuevoTempL", arguments: nil), options: [.foreground])
-               let category = UNNotificationCategory(identifier: Keys.categoriaNotificacion, actions: [nuevaMascarillaAccion], intentIdentifiers: [], options: [])
-               UNUserNotificationCenter.current().setNotificationCategories([category])
+        UNUserNotificationCenter.current().delegate = self
+        //               let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: "Cerrar", options: [.destructive])
+        let nuevaMascarillaAccion = UNNotificationAction(identifier: Keys.nuevaMascarillaAccion, title: NSString.localizedUserNotificationString(forKey: "nuevoTempL", arguments: nil), options: [.foreground])
+        let pararTemporizadorAccion = UNNotificationAction(identifier: Keys.pararTemporizadorAccion, title: NSString.localizedUserNotificationString(forKey: "pause", arguments: nil), options: [.foreground])
+        let category = UNNotificationCategory(identifier: Keys.categoriaNotificacion, actions: [nuevaMascarillaAccion,pararTemporizadorAccion], intentIdentifiers: [], options: [])
+        UNUserNotificationCenter.current().setNotificationCategories([category])
     }
-
+    
     func applicationDidBecomeActive() {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
     }
-
+    
     func applicationWillEnterForeground() {
         NotificationCenter.default.post(name: NSNotification.Name("foreground"), object: nil)
     }
@@ -35,7 +34,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, UNUserNotificationCenter
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, etc.
     }
-
+    
     func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
         // Sent when the system needs to launch the application in the background to process tasks. Tasks arrive in a set, so loop through and process each one.
         for task in backgroundTasks {
@@ -65,28 +64,36 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate, UNUserNotificationCenter
             }
         }
     }
-
+    
     //MARK: - Notificaciones
-       func userNotificationCenter(
-           _ center: UNUserNotificationCenter,
-           willPresent notification: UNNotification,
-           withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions)
-           -> Void) {
-           completionHandler([.alert, .badge, .sound])
-       }
-       
-       func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-           
-           if response.actionIdentifier == Keys.nuevaMascarillaAccion {
-               NotificationCenter.default.post(name: NSNotification.Name("nuevaMascarilla"), object: nil)
-               
-           } else if response.actionIdentifier == Keys.pararTemporizadorAccion {
-               
-           }
-           
-           completionHandler()
-           
-       }
+    func userNotificationCenter(
+        _ center: UNUserNotificationCenter,
+        willPresent notification: UNNotification,
+        withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions)
+        -> Void) {
+		if #available(watchOSApplicationExtension 7.0, *) {
+			completionHandler([.banner, .badge, .sound])
+		} else {
+			completionHandler([.badge, .sound])
+		}
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        if response.actionIdentifier == Keys.nuevaMascarillaAccion {
+            NotificationCenter.default.post(name: NSNotification.Name("nuevaMascarilla"), object: nil)
+            
+        } else if response.actionIdentifier == Keys.pararTemporizadorAccion {
+            
+            let id = response.notification.request.identifier
+            
+            UNUserNotificationCenter.current().removePendingNotificationRequests(withIdentifiers: [id, "\(id)5", "\(id)10", "\(id)30", "\(id)60"])
+            UNUserNotificationCenter.current().removeDeliveredNotifications(withIdentifiers: [id, "\(id)5", "\(id)10", "\(id)30", "\(id)60"])
+        }
+        
+        completionHandler()
+        
+    }
     
     
     //MARK: - Core Data Stack

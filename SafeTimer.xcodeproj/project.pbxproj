@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		710175622470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */; };
-		710175632470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */; };
-		710175642470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */; };
-		710175652470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */; };
+		54EF4B7B2492833300FF7DD2 /* AlarmaLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178341A2461CDB8002E9426 /* AlarmaLogic.swift */; };
+		54EF4B7C2492833600FF7DD2 /* TextBindManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71475BDC246C6445006B1918 /* TextBindManager.swift */; };
+		54EF685C249B8D01004BC962 /* Temporizadores+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF685A249B8D01004BC962 /* Temporizadores+CoreDataClass.swift */; };
+		54EF685D249B8D01004BC962 /* Temporizadores+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF685A249B8D01004BC962 /* Temporizadores+CoreDataClass.swift */; };
+		54EF685E249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF685B249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift */; };
+		54EF685F249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF685B249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift */; };
 		7108A2AC246ED69E00C1305F /* botonIniciar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7108A2AB246ED69E00C1305F /* botonIniciar.swift */; };
 		7108A2AF246EF24300C1305F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7108A2AE246EF24300C1305F /* CloudKit.framework */; };
 		7108A2B1246F071900C1305F /* ajustesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71783420246338AF002E9426 /* ajustesModel.swift */; };
-		7108A2B2246F073100C1305F /* AlarmaLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7178341A2461CDB8002E9426 /* AlarmaLogic.swift */; };
-		7108A2B3246F073100C1305F /* TextBindManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71475BDC246C6445006B1918 /* TextBindManager.swift */; };
 		7108A2BC246F074600C1305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452B3246DCC2800F885DE /* Assets.xcassets */; };
 		7108A2BD246F074700C1305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452B3246DCC2800F885DE /* Assets.xcassets */; };
 		7108A2BE246F075700C1305F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719879AF24608470003C4C49 /* Assets.xcassets */; };
@@ -24,7 +24,6 @@
 		7108A2C2246F0B5C00C1305F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7108A2C1246F0B5C00C1305F /* CoreData.framework */; };
 		710DE7B8247017DB000AE643 /* Mascarillas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71879B7F246497E60050259B /* Mascarillas.xcdatamodeld */; };
 		713B80BC246087A600156D8D /* AjustesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B80BB246087A600156D8D /* AjustesView.swift */; };
-		713B80C024608E2C00156D8D /* nuevaMascarillaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713B80BF24608E2C00156D8D /* nuevaMascarillaView.swift */; };
 		71475BDD246C6445006B1918 /* TextBindManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71475BDC246C6445006B1918 /* TextBindManager.swift */; };
 		7147D25624703BBD001456FA /* ListaTemporizadores.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147D25524703BBD001456FA /* ListaTemporizadores.swift */; };
 		7147D25924703C86001456FA /* nTempWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7147D25824703C86001456FA /* nTempWatch.swift */; };
@@ -50,6 +49,7 @@
 		719879B324608470003C4C49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 719879B224608470003C4C49 /* Preview Assets.xcassets */; };
 		719879B624608470003C4C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 719879B424608470003C4C49 /* LaunchScreen.storyboard */; };
 		719E1D362469C80E003D5B99 /* nuevoTemporizadorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 719E1D352469C80E003D5B99 /* nuevoTemporizadorRow.swift */; };
+		71D44FB02513E619002861CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452CB246DCC2A00F885DE /* Assets.xcassets */; };
 		71D4529D246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D4529C246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift */; };
 		71D452A3246D93EB00F885DE /* creditos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D452A2246D93EB00F885DE /* creditos.swift */; };
 		71D452B2246DCC2100F885DE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71D452B0246DCC2100F885DE /* Interface.storyboard */; };
@@ -64,6 +64,7 @@
 		71D452CC246DCC2A00F885DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452CB246DCC2A00F885DE /* Assets.xcassets */; };
 		71D452CF246DCC2A00F885DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71D452CE246DCC2A00F885DE /* Preview Assets.xcassets */; };
 		71D452D4246DCC2B00F885DE /* SafeTimerWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 71D452AE246DCC2100F885DE /* SafeTimerWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		71F3D1D624A6062C000DDDD5 /* ajustesWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71F3D1D524A6062C000DDDD5 /* ajustesWatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,14 +110,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temporizadores+CoreDataClass.swift"; sourceTree = "<group>"; };
-		710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temporizadores+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		548F92D02499433C00BAE878 /* mascarillas 1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "mascarillas 1.1.xcdatamodel"; sourceTree = "<group>"; };
+		54EF685A249B8D01004BC962 /* Temporizadores+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Temporizadores+CoreDataClass.swift"; path = "Model/Temporizadores+CoreDataClass.swift"; sourceTree = "<group>"; };
+		54EF685B249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Temporizadores+CoreDataProperties.swift"; path = "Model/Temporizadores+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		7108A2AB246ED69E00C1305F /* botonIniciar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = botonIniciar.swift; sourceTree = "<group>"; };
 		7108A2AD246EF22800C1305F /* SafeTimerWatch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SafeTimerWatch Extension.entitlements"; sourceTree = "<group>"; };
 		7108A2AE246EF24300C1305F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		7108A2C1246F0B5C00C1305F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
 		713B80BB246087A600156D8D /* AjustesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AjustesView.swift; sourceTree = "<group>"; };
-		713B80BF24608E2C00156D8D /* nuevaMascarillaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nuevaMascarillaView.swift; sourceTree = "<group>"; };
 		71475BDC246C6445006B1918 /* TextBindManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBindManager.swift; sourceTree = "<group>"; };
 		7147D25524703BBD001456FA /* ListaTemporizadores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTemporizadores.swift; sourceTree = "<group>"; };
 		7147D25824703C86001456FA /* nTempWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nTempWatch.swift; sourceTree = "<group>"; };
@@ -138,6 +139,7 @@
 		71879B5424648F2D0050259B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		71879B562464915C0050259B /* mascarillaRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mascarillaRow.swift; sourceTree = "<group>"; };
 		71879B80246497E60050259B /* mascarillas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = mascarillas.xcdatamodel; sourceTree = "<group>"; };
+		71919F692486D5BA00F90D83 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		719879A62460846E003C4C49 /* SafeTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		719879A92460846E003C4C49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		719879AB2460846E003C4C49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,9 @@
 		71D452CB246DCC2A00F885DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71D452CE246DCC2A00F885DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		71D452D0246DCC2A00F885DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71DF74B624E05B48007F489D /* SafeTimerWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SafeTimerWatch.entitlements; sourceTree = "<group>"; };
+		71F3D1D524A6062C000DDDD5 /* ajustesWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ajustesWatchView.swift; sourceTree = "<group>"; };
+		71F3D1D724A66010000DDDD5 /* gl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = gl; path = gl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +191,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54EF4B7A249282B900FF7DD2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7178341A2461CDB8002E9426 /* AlarmaLogic.swift */,
+				71475BDC246C6445006B1918 /* TextBindManager.swift */,
+				717F9F512471BEC600F937A2 /* AppStoreReviewManager.swift */,
+				71D4529C246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+			usesTabs = 1;
+		};
 		7108A2C4246F105A00C1305F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +210,7 @@
 				7147D25524703BBD001456FA /* ListaTemporizadores.swift */,
 				7147D25C2470535D001456FA /* tempRowWatch.swift */,
 				7147D25824703C86001456FA /* nTempWatch.swift */,
+				71F3D1D524A6062C000DDDD5 /* ajustesWatchView.swift */,
 				717F9F4F2471B29A00F937A2 /* creditosWatch.swift */,
 				7147D25724703C20001456FA /* Supporting Views */,
 			);
@@ -204,7 +222,6 @@
 			children = (
 				717834152461C2D6002E9426 /* iconoAjustes.swift */,
 				717834172461C338002E9426 /* botonFuncionNoDisponible.swift */,
-				71D4529C246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift */,
 				7108A2AB246ED69E00C1305F /* botonIniciar.swift */,
 			);
 			path = "Supporting Views";
@@ -222,9 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				71783420246338AF002E9426 /* ajustesModel.swift */,
-				7178341A2461CDB8002E9426 /* AlarmaLogic.swift */,
-				71475BDC246C6445006B1918 /* TextBindManager.swift */,
-				717F9F512471BEC600F937A2 /* AppStoreReviewManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -242,9 +256,9 @@
 		7198799D2460846E003C4C49 = {
 			isa = PBXGroup;
 			children = (
+				54EF685A249B8D01004BC962 /* Temporizadores+CoreDataClass.swift */,
+				54EF685B249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift */,
 				717F9F492471541000F937A2 /* Localizable.strings */,
-				710175602470924A007BE63B /* Temporizadores+CoreDataClass.swift */,
-				710175612470924A007BE63B /* Temporizadores+CoreDataProperties.swift */,
 				71879B7F246497E60050259B /* Mascarillas.xcdatamodeld */,
 				719879A82460846E003C4C49 /* SafeTimer */,
 				71D452AF246DCC2100F885DE /* SafeTimerWatch */,
@@ -272,6 +286,7 @@
 				719879AB2460846E003C4C49 /* SceneDelegate.swift */,
 				717834192461CDA5002E9426 /* Model */,
 				719879BE24608635003C4C49 /* View */,
+				54EF4B7A249282B900FF7DD2 /* ViewModel */,
 				719879AF24608470003C4C49 /* Assets.xcassets */,
 				719879B424608470003C4C49 /* LaunchScreen.storyboard */,
 				7178341C2461D940002E9426 /* Constants.swift */,
@@ -293,7 +308,6 @@
 			isa = PBXGroup;
 			children = (
 				719E1D342469C7DD003D5B99 /* Home */,
-				713B80BF24608E2C00156D8D /* nuevaMascarillaView.swift */,
 				71D452A1246D93C000F885DE /* Ajustes */,
 				713B80C12460982900156D8D /* Supporting Views */,
 			);
@@ -322,6 +336,7 @@
 		71D452AF246DCC2100F885DE /* SafeTimerWatch */ = {
 			isa = PBXGroup;
 			children = (
+				71DF74B624E05B48007F489D /* SafeTimerWatch.entitlements */,
 				71D452B0246DCC2100F885DE /* Interface.storyboard */,
 				71D452B3246DCC2800F885DE /* Assets.xcassets */,
 				71D452B5246DCC2800F885DE /* Info.plist */,
@@ -419,7 +434,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Asier G. Morato";
 				TargetAttributes = {
 					719879A52460846E003C4C49 = {
@@ -445,6 +460,8 @@
 				es,
 				fr,
 				ca,
+				ru,
+				gl,
 			);
 			mainGroup = 7198799D2460846E003C4C49;
 			packageReferences = (
@@ -481,6 +498,7 @@
 				717F9F462471541000F937A2 /* Localizable.strings in Resources */,
 				7108A2BE246F075700C1305F /* Assets.xcassets in Resources */,
 				71D452B2246DCC2100F885DE /* Interface.storyboard in Resources */,
+				71D44FB02513E619002861CB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,12 +521,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				710175622470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */,
+				54EF685C249B8D01004BC962 /* Temporizadores+CoreDataClass.swift in Sources */,
+				54EF685E249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift in Sources */,
 				719879AA2460846E003C4C49 /* AppDelegate.swift in Sources */,
 				71D4529D246D8DEE00F885DE /* AdaptsToSoftwareKeyboard.swift in Sources */,
 				7108A2AC246ED69E00C1305F /* botonIniciar.swift in Sources */,
 				71879B81246497E60050259B /* Mascarillas.xcdatamodeld in Sources */,
-				710175642470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */,
 				7178341D2461D940002E9426 /* Constants.swift in Sources */,
 				719879AC2460846E003C4C49 /* SceneDelegate.swift in Sources */,
 				717834162461C2D6002E9426 /* iconoAjustes.swift in Sources */,
@@ -521,7 +539,6 @@
 				717834182461C338002E9426 /* botonFuncionNoDisponible.swift in Sources */,
 				71475BDD246C6445006B1918 /* TextBindManager.swift in Sources */,
 				71D452A3246D93EB00F885DE /* creditos.swift in Sources */,
-				713B80C024608E2C00156D8D /* nuevaMascarillaView.swift in Sources */,
 				71783421246338AF002E9426 /* ajustesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,22 +547,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54EF685D249B8D01004BC962 /* Temporizadores+CoreDataClass.swift in Sources */,
 				71D452C2246DCC2900F885DE /* HostingController.swift in Sources */,
 				7147D25D2470535D001456FA /* tempRowWatch.swift in Sources */,
 				7108A2C0246F08CC00C1305F /* Constants.swift in Sources */,
-				7108A2B3246F073100C1305F /* TextBindManager.swift in Sources */,
 				71D452C0246DCC2900F885DE /* ContentView.swift in Sources */,
+				54EF685F249B8D01004BC962 /* Temporizadores+CoreDataProperties.swift in Sources */,
+				54EF4B7B2492833300FF7DD2 /* AlarmaLogic.swift in Sources */,
 				710DE7B8247017DB000AE643 /* Mascarillas.xcdatamodeld in Sources */,
 				71D452C6246DCC2900F885DE /* NotificationController.swift in Sources */,
 				7147D25924703C86001456FA /* nTempWatch.swift in Sources */,
-				710175652470924A007BE63B /* Temporizadores+CoreDataProperties.swift in Sources */,
+				71F3D1D624A6062C000DDDD5 /* ajustesWatchView.swift in Sources */,
 				71D452C4246DCC2900F885DE /* ExtensionDelegate.swift in Sources */,
 				7108A2B1246F071900C1305F /* ajustesModel.swift in Sources */,
-				7108A2B2246F073100C1305F /* AlarmaLogic.swift in Sources */,
 				71D452C8246DCC2900F885DE /* NotificationView.swift in Sources */,
 				7147D25624703BBD001456FA /* ListaTemporizadores.swift in Sources */,
+				54EF4B7C2492833600FF7DD2 /* TextBindManager.swift in Sources */,
 				717F9F502471B29A00F937A2 /* creditosWatch.swift in Sources */,
-				710175632470924A007BE63B /* Temporizadores+CoreDataClass.swift in Sources */,
 				7147D25B24704A66001456FA /* bIniciarWatch.swift in Sources */,
 				71D452CA246DCC2900F885DE /* ComplicationController.swift in Sources */,
 			);
@@ -575,6 +593,8 @@
 				714E5596247473D9000FDC53 /* es */,
 				714E5597247473E0000FDC53 /* fr */,
 				7153A842247C713B0069F66A /* ca */,
+				71919F692486D5BA00F90D83 /* ru */,
+				71F3D1D724A66010000DDDD5 /* gl */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -625,6 +645,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -649,7 +670,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -686,6 +707,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -704,7 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -725,12 +747,12 @@
 				DEVELOPMENT_TEAM = XC5399ZLE3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SafeTimer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas;
 				PRODUCT_NAME = SafeTimer;
 				SWIFT_VERSION = 5.0;
@@ -749,12 +771,12 @@
 				DEVELOPMENT_TEAM = XC5399ZLE3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SafeTimer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas;
 				PRODUCT_NAME = SafeTimer;
 				SWIFT_VERSION = 5.0;
@@ -778,14 +800,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -805,14 +827,14 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit.extension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -822,6 +844,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SafeTimerWatch/SafeTimerWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = XC5399ZLE3;
@@ -832,7 +855,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -841,7 +864,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -851,6 +874,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SafeTimerWatch/SafeTimerWatch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = XC5399ZLE3;
@@ -861,7 +885,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = asiergmorato.Mascarillas.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -869,7 +893,7 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "SafeTimerWatch-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -918,9 +942,10 @@
 		71879B7F246497E60050259B /* Mascarillas.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				548F92D02499433C00BAE878 /* mascarillas 1.1.xcdatamodel */,
 				71879B80246497E60050259B /* mascarillas.xcdatamodel */,
 			);
-			currentVersion = 71879B80246497E60050259B /* mascarillas.xcdatamodel */;
+			currentVersion = 548F92D02499433C00BAE878 /* mascarillas 1.1.xcdatamodel */;
 			path = Mascarillas.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

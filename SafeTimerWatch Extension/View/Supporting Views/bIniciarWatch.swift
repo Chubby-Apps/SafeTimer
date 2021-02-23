@@ -15,7 +15,7 @@ struct bIniciarWatch: View {
         HStack {
             Spacer()
             Text("iniciar")
-                .font(.body)
+                .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
                 .bold()
                 .foregroundColor(isEnabled ? Color.white : Color.gray)
             Spacer()
@@ -25,6 +25,6 @@ struct bIniciarWatch: View {
 
 struct bIniciarWatch_Previews: PreviewProvider {
     static var previews: some View {
-        bIniciarWatch()
+        bIniciarWatch().previewLayout(.sizeThatFits)
     }
 }

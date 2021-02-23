@@ -13,6 +13,7 @@ import CloudKit
 
 struct ContentView: View {
     var managedObjectContext = (WKExtension.shared().delegate as! ExtensionDelegate).persistentContainer.viewContext
+    @EnvironmentObject private var ajustes: ajustesModel
     var body: some View {
         ListaTemporizadores().environment(\.managedObjectContext, managedObjectContext)
     }

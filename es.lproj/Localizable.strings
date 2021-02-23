@@ -15,6 +15,8 @@
 "duracion" = "Duración";
 "horas" = "horas";
 "h" = "h";
+"minutos" = "minutos";
+"m" = "m";
 "iniciar" = "Iniciar";
 "ajustes" = "Ajustes";
 "valoraApp" = "Valora la app";
@@ -34,3 +36,17 @@
 "pause" = "Parar";
 "timeToChange" = "Es hora de cambiar";
 "enoughUse" = "Ya lo has usado el tiempo suficiente.";
+"menos" = "menos";
+"usoDeMas" = "Tiempo excedido";
+"notificaciones" = "NOTIFICACIONES";
+"notificacionesRecurrentes" = "Múltiples recordatorios";
+"notificacionesInfo" = "Si activas esta opción SafeTimer te recordará en multiples ocasiones (5 m, 10 m, 30 m y 1h después) que el temporizador ha terminado hasta que lo pares.";
+"borrar" = "Borrar";
+"seguroBorrar" = "¿Estás seguro de eliminar este temporizador? Esta acción no se puede deshacer.";
+"cancelar" = "Cancelar";
+"reiniciar" = "Reiniciar";
+"duplicar" = "Duplicar";
+"temporizadores" = "TEMPORIZADORES";
+"contarUsos" = "Contar usos del temporizador";
+"mostrarUsos" = "Mostrar usos";
+"nUsos" = "Número de usos:";

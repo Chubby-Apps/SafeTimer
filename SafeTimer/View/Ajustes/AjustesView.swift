@@ -21,51 +21,90 @@ struct AjustesView: View {
         NavigationView {
             Form {
                 
-                Section(header: Text("ABOUT"), footer: Text("hechoConAmor").font(.caption)) {
+                Section(header: Text("temporizadores").font(.system(Font.TextStyle.footnote, design: Font.Design.rounded)), footer: Text("notificacionesInfo").font(.system(Font.TextStyle.caption, design: Font.Design.rounded))) {
+                    
                     HStack {
-                        iconoAjustes(icono: "star.fill", colorFondo: Color(.systemYellow))
+                        iconoAjustes(icono: "textformat.123", colorFondo: Color(.systemTeal), offsetX: -0.2, tamanoIcono: 14)
+                    
+                    Spacer().frame(width: 15)
+
+                    Toggle(isOn: $ajustes.numeroDeUsos) {
+                        Text("contarUsos")
+                        .foregroundColor(Color(.label))
+                        .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
+                    }
+                    }
+                    HStack {
+                        iconoAjustes(icono: "timer", colorFondo: Color(.systemRed),offsetX: 0.2, offsetY: -0.5, tamanoIcono: 20)
+
+                        Spacer().frame(width: 15)
+
+                        Toggle(isOn: $ajustes.notificacionRecordatorio) {
+                            Text("notificacionesRecurrentes")
+                            .foregroundColor(Color(.label))
+                            .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
+                        }
+                    }
+                }
+                
+                Section(header: Text("ABOUT").font(.system(Font.TextStyle.footnote, design: Font.Design.rounded)), footer: Text("hechoConAmor").font(.system(Font.TextStyle.caption, design: Font.Design.rounded))) {
+                    HStack {
+                        iconoAjustes(icono: "star.fill", colorFondo: Color(.systemYellow), offsetY: -0.5)
                         Spacer().frame(width: 15)
                         Button(action: {
                             self.writeReview()
                         }) {
-                            Text("valoraApp").foregroundColor(Color(.label))
+                            Text("valoraApp")
+                                .foregroundColor(Color(.label))
+                                .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
                         }
                         Spacer()
-                        Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(Color(.systemGray3))
+                            .font(.system(size: 13, weight: .semibold, design: Font.Design.rounded))
                             .accessibility(hidden: true)
                     }
                     HStack {
-                        iconoAjustes(icono: "globe", colorFondo: Color(.systemGreen))
+                        iconoAjustes(icono: "globe", colorFondo: Color(.systemGreen), tamanoIcono: 20)
                         Spacer().frame(width: 15)
                         Button(action: {
                             if let url = URL(string: "http://hortelanos.net") {UIApplication.shared.open(url)}
                         }) {
-                            Text("visitaNuestraWeb").foregroundColor(Color(.label))
+                            Text("visitaNuestraWeb")
+                                .foregroundColor(Color(.label))
+                                .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
                         }
                         Spacer()
-                        Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(Color(.systemGray3))
+                            .font(.system(size: 13, weight: .semibold, design: Font.Design.rounded))
                             .accessibility(hidden: true)
                     }
                     HStack {
                         NavigationLink(destination: creditos(cerrar: self.$cerrar)) {
                             HStack {
-                                iconoAjustes(icono: "info.circle", colorFondo: Color(.systemBlue))
+                                iconoAjustes(icono: "info", colorFondo: Color(.systemBlue),offsetY: -1, tamanoIcono: 19)
                                 Spacer().frame(width: 15)
                                 Text("creditos")
+                                    .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
                             }
                         }
                     }
                     
                     HStack {
-                        iconoAjustes(icono: "doc.text.fill", colorFondo: Color(.systemGray))
+                        iconoAjustes(icono: "doc.text.fill", colorFondo: Color(.systemGray), offsetX: 0.2, offsetY: -0.2)
                         Spacer().frame(width: 15)
                         Button(action: {
-                            if let url = URL(string: "https://github.com/Hortelanos/SafeTimer/blob/master/Pol%C3%ADtica%20de%20Privacidad.md") {UIApplication.shared.open(url)}
+                            if let url = URL(string: "https://safetimer.app/privacypolicy/") {UIApplication.shared.open(url)}
                         }) {
-                            Text("politicaPrivacidad").foregroundColor(Color(.label))
+                            Text("politicaPrivacidad")
+                                .foregroundColor(Color(.label))
+                                .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
                         }
                         Spacer()
-                        Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(Color(.systemGray3))
+                            .font(.system(size: 13, weight: .semibold, design: Font.Design.rounded))
                             .accessibility(hidden: true)
                     }
                     HStack {
@@ -75,13 +114,17 @@ struct AjustesView: View {
                             if let url = URL(string: "mailto:asier@hortelanos.net?subject=Feedback%20SafeTimer") {UIApplication.shared.open(url)}
                         }) {
                             Text("enviarFeedback").foregroundColor(Color(.label))
+                                .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
                         }
                         Spacer()
-                        Image(systemName: "chevron.right").foregroundColor(Color(.systemGray3))
+                        Image(systemName: "chevron.right")
+                            .foregroundColor(Color(.systemGray3))
+                            .font(.system(size: 13, weight: .semibold, design: Font.Design.rounded))
                             .accessibility(hidden: true)
                     }
                 }
-            }
+            }.listStyle(GroupedListStyle())
+            .environment(\.horizontalSizeClass, .regular)
                 
             .navigationBarTitle("ajustes")
             .navigationBarItems(trailing: Button(action: {self.cerrar = false}) {Image(systemName: "xmark.circle.fill").font(.system(size: 25)).foregroundColor(Color(.systemRed)).accessibility(label: Text("cerrar"))})
@@ -115,61 +158,3 @@ struct AjustesView_Previews: PreviewProvider {
     }
 }
 #endif
-//                NavigationLink(destination: ConsejosView()) {
-//                    HStack {
-//                        iconoAjustes(icono: "info.circle", colorFondo: Color(.systemBlue))
-//                        Spacer().frame(width: 15)
-//                        Text("Consejos")
-//                    }
-//                }
-//
-//                Section (header: Text("MASCARILLAS")){
-//                    HStack {
-//                        Text("Quirúrgica")
-//                        Spacer()
-//
-//                        Stepper(value: $ajustes.quirurgica, in: 1...99, step: 1) {
-//                            if ajustes.quirurgica == 1 {
-//                                Text("\(String(ajustes.quirurgica)) hora")
-//                            } else {
-//                                Text("\(String(ajustes.quirurgica)) horas")
-//                            }
-//                        }.frame(width: 171)
-//                    }
-//                    HStack {
-//                        Text("FFP2")
-//                        Spacer()
-//
-//                        Stepper(value: $ajustes.ffp2, in: 1...99, step: 1) {
-//                            if ajustes.ffp2 == 1 {
-//                                Text("\(String(ajustes.ffp2)) hora")
-//                            } else {
-//                                Text("\(String(ajustes.ffp2)) horas")
-//                            }
-//                        }.frame(width: 171)
-//                    }
-//                    HStack {
-//                        Text("FFP3")
-//                        Spacer()
-//
-//                        Stepper(value: $ajustes.ffp3, in: 1...99, step: 1) {
-//                            if ajustes.ffp3 == 1 {
-//                                Text("\(String(ajustes.ffp3)) hora")
-//                            } else {
-//                                Text("\(String(ajustes.ffp3)) horas")
-//                            }
-//                        }.frame(width: 171)
-//                    }
-//                    HStack {
-//                        Text("Otro")
-//                        Spacer()
-//
-//                        Stepper(value: $ajustes.otro, in: 1...99, step: 1) {
-//                            if ajustes.otro == 1 {
-//                                Text("\(String(ajustes.otro)) hora")
-//                            } else {
-//                                Text("\(String(ajustes.otro)) horas")
-//                            }
-//                        }.frame(width: 171)
-//                    }
-//                }

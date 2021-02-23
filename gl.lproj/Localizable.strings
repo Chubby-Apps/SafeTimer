@@ -1,0 +1,52 @@
+/* 
+  Localizable.strings
+  SafeTimer
+
+  Created by Asier G. Morato on 17/05/2020.
+  Copyright © 2020 Asier G. Morato. All rights reserved.
+*/
+
+"usoRestante" = "Uso restante";
+"nuevoTempL" = "Novo temporizador";
+"nuevoTempS" = "Novo temp.";
+"anadir" = "Engadir";
+"nombre" = "Nome";
+"utensilio" = "Utensilio";
+"duracion" = "Duración";
+"horas" = "horas";
+"h" = "h";
+"minutos" = "minutos";
+"m" = "m";
+"iniciar" = "Iniciar";
+"ajustes" = "Axustes";
+"valoraApp" = "Valora a aplicación";
+"visitaNuestraWeb" = "Visita a nosa web";
+"creditos" = "Créditos";
+"politicaPrivacidad" = "Política de privacidade";
+"hechoConAmor" = "Feito con ❤️ en Vitoria-Gasteiz.";
+"enviarFeedback" = "Enviar comentarios";
+"tCredito" = "⏰ SafeTimer foi desenvolta de forma altruísta por Hortelanos para axudar a controlar o tempo de uso restante de ferramentas, útiles e equipamento que precisa ser mudado cada poucas horas.";
+"asier" = "👨🏻‍💻 Código por Asier G. Morato.";
+"patricia" = "🧑🏻‍🎨 Deseño por Patricia Bedoya.";
+"fNoDisponible" = "Función non dispoñible";
+"fNoDisponibleExplicacion" = "Esta función estará dispoñible máis adiante.";
+"aceptar" = "Aceptar";
+"cerrar" = "Pechar";
+"play" = "Iniciar";
+"pause" = "Deter";
+"timeToChange" = "É o momento de cambiar";
+"enoughUse" = "Ya o usaches tempo suficiente.";
+"menos" = "menos";
+"usoDeMas" = "Tempo excedido";
+"notificaciones" = "NOTIFICACIÓNS";
+"notificacionesRecurrentes" = "Múltiples recordatorios";
+"notificacionesInfo" = "Se activas esta función SafeTimer lembrarache en múltiples ocasións (5 m, 10 m, 30 m e 1 hora despois) que o temporizador finalizou ata que o deteñas.";
+"borrar" = "Borrar";
+"seguroBorrar" = "Estás seguro de eliminar este temporizador? Esta acción non se pode desfacer.";
+"cancelar" = "Cancelar";
+"reiniciar" = "Reiniciar";
+"duplicar" = "Duplicar";
+"temporizadores" = "TEMPORIZADORES";
+"contarUsos" = "Contar usos do temporizador";
+"mostrarUsos" = "Mostrar usos";
+"nUsos" = "Número de usos:";

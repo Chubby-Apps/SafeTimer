@@ -10,6 +10,9 @@ import SwiftUI
 
 struct creditos: View {
     @Binding var cerrar: Bool
+    
+    let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+    
     var body: some View {
         Form {
             List {
@@ -18,14 +21,15 @@ struct creditos: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 110, height: 110)
                     .accessibility(label: Text("Logo SafeTimer"))
-                Text("v1.0.2")
-                    .font(.headline)
+                Text("v\(appVersion ?? "")")
+                    .font(.system(Font.TextStyle.headline, design: Font.Design.rounded))
                     .bold()
+                    
                 Spacer().frame(height: 20)
                 HStack {
-                    Text("tCredito")// + Text(" Hortelanos ").bold() + Text("tCredito2") + Text("tCredito3")
+                    Text("tCredito")
                         .fontWeight(.regular)
-                        .font(.callout)
+                        .font(.system(Font.TextStyle.callout, design: Font.Design.rounded))
                         .lineLimit(nil)
                         .fixedSize(horizontal: false, vertical: true)
                     Spacer()
@@ -34,14 +38,14 @@ struct creditos: View {
                 HStack {
                     Text("asier")
                         .fontWeight(.regular)
-                        .font(.callout)
+                        .font(.system(Font.TextStyle.callout, design: Font.Design.rounded))
                     Spacer()
                 }
                 Spacer().frame(height: 10)
                 HStack {
                     Text("patricia")
                         .fontWeight(.regular)
-                        .font(.callout)
+                        .font(.system(Font.TextStyle.callout, design: Font.Design.rounded))
                     Spacer()
                 }
                 Spacer().frame(height: 10)

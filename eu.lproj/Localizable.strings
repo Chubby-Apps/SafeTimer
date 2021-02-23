@@ -15,6 +15,8 @@
 "duracion" = "Iraupena";
 "horas" = "orduak";
 "h" = "h";
+"minutos" = "minutuak";
+"m" = "m";
 "iniciar" = "Hasi";
 "ajustes" = "Doikuntza";
 "valoraApp" = "App baloratu";
@@ -34,3 +36,17 @@
 "pause" = "Gelditu";
 "timeToChange" = "Aldatzeko garaia da";
 "enoughUse" = "Nahiko denbora erabili duzu.";
+"menos" = "ken";
+"usoDeMas" = "Denbora gaindituta";
+"notificaciones" = "OHARTARAZPENA";
+"notificacionesRecurrentes" = "Oroigarriak";
+"notificacionesInfo" = "Aukera hau aktibatzen baduzu, Safe Timer aplikazioak askotan gogoratuko dizut (5 minutu, 10 minutu, 30 minutu eta ordu bat pasa eta gero) tenporizadorea bukatu dela zuk piztu arte.";
+"borrar" = "Ezabatu";
+"seguroBorrar" = "tenporizadorea ezabatu nahi duzu?";
+"cancelar" = "Bertan behera utzi";
+"reiniciar" = "Berriro hasi";
+"duplicar" = "Bikoiztu";
+"temporizadores" = "TENPORIZADOREAK";
+"contarUsos" = "Erabilera kontatu";
+"mostrarUsos" = "Erabilera erakutsi";
+"nUsos" = "Erabilera zenbakia:";

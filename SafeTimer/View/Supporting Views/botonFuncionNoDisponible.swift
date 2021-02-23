@@ -22,9 +22,11 @@ struct botonFuncionNoDisponible: View {
     }
 }
 
-
+//MARK: - Preview
+#if DEBUG
 struct botonFuncionNoDisponible_Previews: PreviewProvider {
     static var previews: some View {
-        botonFuncionNoDisponible(nombre: "Título", alertaFuncionNoDisponible: .constant(false))
+        botonFuncionNoDisponible(nombre: "Título", alertaFuncionNoDisponible: .constant(false)).previewLayout(.sizeThatFits)
     }
 }
+#endif

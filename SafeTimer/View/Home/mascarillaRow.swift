@@ -8,13 +8,16 @@
 
 import SwiftUI
 import CoreData
+import Combine
 
 struct mascarillaRow: View {
     
     @Environment(\.managedObjectContext) var managedObjectContext
     @ObservedObject var datos: Temporizadores
+    @EnvironmentObject var ajustes: ajustesModel
     var alarma = AlarmaLogic()
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State var alertaEliminar = false
     
     @State var porcentajeProgresoEnMarcha: CGFloat = 0
     var porcentajeProgresoParado: CGFloat {
@@ -22,7 +25,7 @@ struct mascarillaRow: View {
     }
     @State var tiempoRestante: TimeInterval = 0
     var tiempoRestanteString: String {
-        if tiempoRestante < 3600 && tiempoRestante > 60 {
+        if tiempoRestante < 3600 && tiempoRestante >= 60 {
             let tr: TimeInterval =  tiempoRestante
             return "\(tr.format(using: [.minute, .second])!)"
         } else if tiempoRestante >= 0 && tiempoRestante <= 59 {
@@ -44,148 +47,135 @@ struct mascarillaRow: View {
     }
     
     var body: some View {
-            Group {
-                HStack {
-                    ZStack {
+        Group {
+            HStack {
+                ZStack {
+                    if self.datos.enUso {
                         Circle()
                             .trim(from: 0, to: 1)
-                            .stroke(Color(.systemGray4), style: StrokeStyle(lineWidth: 5, lineCap: .round))
-                            .frame(width: 65, height: 65)
-                        
-                        if self.datos.enUso {
-                            if self.porcentajeProgresoEnMarcha > 0.25 {
-                                Circle()
-                                    .trim(from: 1 - (self.porcentajeProgresoEnMarcha), to: 1)
-                                    .stroke(Color(.systemGreen), style: StrokeStyle(lineWidth: 5, lineCap: .round))
-                                    .frame(width: 65, height: 65)
-                                    .rotationEffect(.init(degrees: -90))
-                                Image(systemName: "timer")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 45, height: 45)
-                                    .foregroundColor(Color(.systemGreen))
-                                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                                    .accessibility(hidden: true)
-                            } else {
-                                Circle()
-                                    .trim(from: 1 - (self.porcentajeProgresoEnMarcha), to: 1)
-                                    .stroke(Color(.systemRed), style: StrokeStyle(lineWidth: 5, lineCap: .round))
-                                    .frame(width: 65, height: 65)
-                                    .rotationEffect(.init(degrees: -90))
-                                Image(systemName: "timer")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 45, height: 45)
-                                    .foregroundColor(Color(.systemRed))
-                                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                                    .accessibility(hidden: true)
-                            }
-                            
-                        } else {
-                            if self.porcentajeProgresoParado > 0.25 {
-                                Circle()
-                                    .trim(from: 1 - (self.porcentajeProgresoParado), to: 1)
-                                    .stroke(Color(.systemGreen), style: StrokeStyle(lineWidth: 5, lineCap: .round))
-                                    .frame(width: 65, height: 65)
-                                    .rotationEffect(.init(degrees: -90))
-                                Image(systemName: "timer")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 45, height: 45)
-                                    .foregroundColor(Color(.systemGreen))
-                                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                                    .accessibility(hidden: true)
-                            } else {
-                                Circle()
-                                    .trim(from: 1 - (self.porcentajeProgresoParado), to: 1)
-                                    .stroke(Color(.systemRed), style: StrokeStyle(lineWidth: 5, lineCap: .round))
-                                    .frame(width: 65, height: 65)
-                                    .rotationEffect(.init(degrees: -90))
-                                Image(systemName: "timer")
-                                    .resizable()
-                                    .aspectRatio(contentMode: .fit)
-                                    .frame(width: 45, height: 45)
-                                    .foregroundColor(Color(.systemRed))
-                                    .rotation3DEffect(.degrees(180), axis: (x: 0, y: 1, z: 0))
-                                    .accessibility(hidden: true)
-                            }
-                        }
-                    }.padding(.vertical, 9).padding(.trailing, 5)
-                    
-                    VStack (alignment: .leading) {
-                        Text(self.datos.tipoMascarilla ?? "Utensilio")
-                            .font(.caption)
-                        if self.tiempoRestante >= 0 {
-                            Text(self.tiempoRestanteString)
-                                .font(.largeTitle)
-                                .bold()
-                            .accessibility(label: Text("usoRestante")+Text(self.tiempoRestanteString))
-                        } else {
-                            Text(self.tiempoRestanteString)
-                                .font(.largeTitle)
-                                .bold()
-                                .foregroundColor(Color(.systemRed))
-                                .accessibility(label: Text("usoRestante")+Text(self.tiempoRestanteString))
-                        }
-                        Text("usoRestante")
-                            .font(.caption)
-                            .foregroundColor(Color(.systemGray))
-                            .accessibility(hidden: true)
+                            .stroke(Color(self.porcentajeProgresoEnMarcha > 0.25 ? .systemGreen : .systemRed).opacity(0.15), style: StrokeStyle(lineWidth: 11, lineCap: .round))
+                            .frame(width: 45, height: 45)
+                        Circle()
+                            .trim(from: 1 - (self.porcentajeProgresoEnMarcha), to: 1)
+                            .stroke(Color(self.porcentajeProgresoEnMarcha > 0.25 ? .systemGreen : .systemRed), style: StrokeStyle(lineWidth: 11, lineCap: .round))
+                            .frame(width: 45, height: 45)
+                            .rotationEffect(.init(degrees: -90))
+                    } else {
+                        Circle()
+                            .trim(from: 0, to: 1)
+                            .stroke(Color(self.porcentajeProgresoParado > 0.25 ? .systemGreen : .systemRed).opacity(0.15), style: StrokeStyle(lineWidth: 11, lineCap: .round))
+                            .frame(width: 45, height: 45)
+                        Circle()
+                            .trim(from: 1 - (self.porcentajeProgresoParado), to: 1)
+                            .stroke(Color(self.porcentajeProgresoParado > 0.25 ? .systemGreen : .systemRed), style: StrokeStyle(lineWidth: 11, lineCap: .round))
+                            .frame(width: 45, height: 45)
+                            .rotationEffect(.init(degrees: -90))
                     }
-                    .padding(.leading, 5).padding(.vertical, 12)
                     
-                    Spacer()
-                    
-                    Button(action: {
-                        if self.datos.enUso { // True - Pulsas Pause
-                            self.alarma.pararAlarma(ID: self.datos.id!)
-                            // Meter duración restante
-                            
-                            let horaActual = Date()
-                            let difference = Calendar.current.dateComponents([.second], from: self.datos.horaInicio!, to: horaActual)
-                            self.datos.duracionRestante = self.datos.duracionRestante - Double(difference.second!)
-                            
-                            self.datos.enUso.toggle()
-                            self.guardar()
-                        } else { // False - Pulsas Play
-                            if self.datos.duracionRestante > 1 {
-                                self.alarma.nuevaAlarma(duracionS: self.datos.duracionRestante, ID: self.datos.id!)
-                            }
-                            
-                            self.tiempoRestante = self.datos.duracionRestante
-                            self.datos.horaInicio = Date()
-                            
-                            self.datos.enUso.toggle()
-                            self.guardar()
-                        }
-                    }) {
-                        Image(systemName: self.datos.enUso ? "pause.circle" : "play.circle")
-                            .font(.system(size: 50))
-                            .foregroundColor(self.datos.enUso ? Color(.systemOrange) : Color(.systemBlue))
-                            .accessibility(label: self.datos.enUso ? Text("pause") : Text("play"))
+                    if self.ajustes.numeroDeUsos {
+                        Text("\(self.datos.nUsos)")
+                            .font(.system(Font.TextStyle.callout, design: Font.Design.rounded))
+                            .bold()
+                    } else {
+                        EmptyView()
                     }
-                }.padding(.horizontal)
-            }.background(Color("nTempRowC")).cornerRadius(20).frame(height: 90)
-        
+                }.padding(.vertical, 9).padding(.trailing, 5)
+                
+                VStack (alignment: .leading) {
+                    Text(self.datos.tipoMascarilla ?? "Utensilio")
+                        .font(.system(Font.TextStyle.body, design: Font.Design.rounded))
+                        .accessibility(label: self.ajustes.numeroDeUsos ? Text(self.datos.tipoMascarilla ?? "Utensilio")+Text("nUsos")+Text("\(self.datos.nUsos)") : Text(self.datos.tipoMascarilla ?? "Utensilio"))
+                    
+                    Text(self.tiempoRestanteString)
+                        .font(.system(Font.TextStyle.largeTitle, design: Font.Design.rounded))
+                        .bold()
+                        .foregroundColor(self.tiempoRestante >= 0 ? Color(.label) : Color(.systemRed))
+                        .accessibility(label: self.tiempoRestante >= 0 ? Text("usoRestante")+Text(self.tiempoRestanteString) : Text("usoRestante")+Text("menos")+Text(self.tiempoRestanteString))
+                        .lineLimit(1)
+                }.padding(.leading, 5).padding(.vertical, 10)
             
+            Spacer()
+            
+            Button(action: {
+                if self.datos.enUso { // True - Pulsas Pause
+                    self.alarma.pararAlarma(ID: self.datos.id!)
+                    // Meter duración restante
+                    
+                    let horaActual = Date()
+                    let difference = Calendar.current.dateComponents([.second], from: self.datos.horaInicio!, to: horaActual)
+                    self.datos.duracionRestante = self.datos.duracionRestante - Double(difference.second!)
+                    
+                    self.datos.enUso.toggle()
+                    self.guardar()
+                } else { // False - Pulsas Play
+                    if self.datos.duracionRestante > 1 {
+                        self.alarma.nuevaAlarma(duracionS: self.datos.duracionRestante, ID: self.datos.id!)
+                    }
+                    
+                    self.tiempoRestante = self.datos.duracionRestante
+                    self.datos.horaInicio = Date()
+                    
+                    self.datos.enUso.toggle()
+                    self.guardar()
+                }
+            }) {
+                Image(systemName: self.datos.enUso ? "pause.circle" : "play.circle")
+                    .font(.system(size: 40, weight: Font.Weight.bold, design: Font.Design.rounded))
+                    .foregroundColor(self.datos.enUso ? Color(.systemOrange) : Color(.systemBlue))
+                    .accessibility(label: self.datos.enUso ? Text("pause") : Text("play"))
+            }
+        }.padding(.horizontal)
+    }.background(Color("nTempRowC")).cornerRadius(20)
+    .contextMenu {
+        withAnimation {
+            Button(action: {
+                self.datos.enUso = false
+                self.alarma.pararAlarma(ID: self.datos.id!)
+                self.datos.duracionRestante = self.datos.duracion
+                self.datos.nUsos += 1
+                self.guardar()
+                self.tiempoRestante = self.datos.duracionRestante
+            }) {
+                Text("reiniciar")
+                Image(systemName: "arrow.counterclockwise")
+            }
+        }
+        withAnimation {
+            Button(action: {
+                self.duplicar()
+            }) {
+                Text("duplicar")
+                Image(systemName: "doc.on.doc")
+            }
+        }
+        withAnimation {
+            Button(action: {self.alertaEliminar = true}) {
+                Text("borrar")
+                Image(systemName: "trash")
+            }.foregroundColor(.red)
+        }
+    }
+            
+    .alert(isPresented: $alertaEliminar) {
+        Alert(title: Text("borrar"), message: Text("seguroBorrar"), primaryButton: .destructive(Text("borrar")) {
+            self.borrar()
+            }, secondaryButton: .cancel(Text("Cancelar")))
+    }
             // Cuando aparece se rellenan datos
-            .onAppear(perform: {
+        .onAppear(perform: {
                 if self.datos.enUso {
                     let horaActual = Date()
                     let difference = Calendar.current.dateComponents([.second], from: self.datos.horaInicio!, to: horaActual)
                     self.tiempoRestante = self.datos.duracionRestante - Double(difference.second!)
-                    
                     self.porcentajeProgresoEnMarcha = CGFloat(self.tiempoRestante / self.datos.duracion)
-                    
-                    
                 } else {
                     self.tiempoRestante = self.datos.duracionRestante
+                    self.porcentajeProgresoEnMarcha = CGFloat(self.tiempoRestante / self.datos.duracion)
                 }
-                
-            })
+        })
             
-            // Cada segundo se actualizan datos
-            .onReceive(self.timer) { (_) in
+        // Cada segundo se actualizan datos
+        .onReceive(self.timer) { (_) in
                 if self.datos.enUso { // Contando
                     self.tiempoRestante -= 1
                     self.porcentajeProgresoEnMarcha = CGFloat(self.tiempoRestante / self.datos.duracion)
@@ -196,14 +186,13 @@ struct mascarillaRow: View {
                 let horaActual = Date()
                 let difference = Calendar.current.dateComponents([.second], from: self.datos.horaInicio!, to: horaActual)
                 self.tiempoRestante = self.datos.duracionRestante - Double(difference.second!)
-                
                 self.porcentajeProgresoEnMarcha = CGFloat(self.tiempoRestante / self.datos.duracion)
-                
             } else {
                 self.tiempoRestante = self.datos.duracionRestante
+                self.porcentajeProgresoEnMarcha = CGFloat(self.tiempoRestante / self.datos.duracion)
             }
         }
-    }
+}
 }
 
 //MARK: - Funciones
@@ -214,6 +203,31 @@ extension mascarillaRow {
             print("Cambios guardados.")
             
         } catch {
+            print(error.localizedDescription)
+        }
+    }
+    func duplicar() {
+        let nuevoTemporizadorItem = Temporizadores(context: self.managedObjectContext)
+        nuevoTemporizadorItem.id = UUID()
+        nuevoTemporizadorItem.tipoMascarilla = self.datos.tipoMascarilla
+        nuevoTemporizadorItem.duracion = self.datos.duracion
+        nuevoTemporizadorItem.duracionRestante = self.datos.duracion
+        nuevoTemporizadorItem.enUso = false
+        nuevoTemporizadorItem.horaInicio = Date()
+        nuevoTemporizadorItem.order = self.datos.order + 1
+        nuevoTemporizadorItem.nUsos = 1
+        
+        do {
+            try self.managedObjectContext.save()
+        } catch {
+            print(error.localizedDescription)
+        }
+    }
+    func borrar() {
+        self.managedObjectContext.delete(self.datos)
+        do {
+            try self.managedObjectContext.save()
+        } catch{
             print(error.localizedDescription)
         }
     }
@@ -245,8 +259,17 @@ struct mascarillaRow_Previews: PreviewProvider {
         newMascarillaItem.duracionRestante = 3000
         newMascarillaItem.horaInicio = Date()
         newMascarillaItem.enUso = true
+        newMascarillaItem.nUsos = 10
         
-        return mascarillaRow(datos: newMascarillaItem).environment(\.managedObjectContext, context)
+       return ForEach(ColorScheme.allCases, id: \.self) { color in
+                mascarillaRow(datos: newMascarillaItem)
+                    .environment(\.managedObjectContext, context)
+                    .previewLayout(.sizeThatFits)
+                    .previewDisplayName("\(color)")
+                    .environment(\.colorScheme, color)
+                    .environmentObject(ajustesModel())
+        }
+        
     }
 }
 #endif

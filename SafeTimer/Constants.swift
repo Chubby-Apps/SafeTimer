@@ -12,11 +12,14 @@ struct Keys {
     static let notificacionID = "mascarillas"
     static let categoriaNotificacion = "alertaMascarilla"
     static let pararTemporizadorAccion = "pTemporizadorA"
+    static let cerrarTemporizadorAccion = "cTemporizadorA"
     static let nuevaMascarillaAccion = "nMascarillaA"
     static let quirurgica = "quirurgica"
     static let FFP2 = "FFP2"
     static let FFP3 = "FFP3"
     static let otro = "otro"
+    static let notificacionRecordatorio = "notificacionRecordatorio"
+    static let numeroDeUsos = "numeroDeUsos"
 }
 
 extension UserDefaults {

@@ -15,6 +15,8 @@
 "duracion" = "Time";
 "horas" = "hours";
 "h" = "h";
+"minutos" = "minutes";
+"m" = "m";
 "iniciar" = "Start";
 "ajustes" = "Settings";
 "valoraApp" = "Rate the app";
@@ -34,3 +36,17 @@
 "pause" = "Pause";
 "timeToChange" = "It's time to change";
 "enoughUse" = "You've used it long enough.";
+"menos" = "minus";
+"usoDeMas" = "Time exceeded";
+"notificaciones" = "NOTIFICATIONS";
+"notificacionesRecurrentes" = "Multiple reminders";
+"notificacionesInfo" = "If you activate this option SafeTimer will remind you on multiple occasions (5m, 10m, 30m and 1h later) that the timer has expired until you stop it.";
+"borrar" = "Delete";
+"seguroBorrar" = "¿Are you sure? This action can not be undone.";
+"cancelar" = "Cancel";
+"reiniciar" = "Restart";
+"duplicar" = "Duplicate";
+"temporizadores" = "TIMERS";
+"contarUsos" = "Count timer uses";
+"mostrarUsos" = "Show timer uses";
+"nUsos" = "Nº of uses:";

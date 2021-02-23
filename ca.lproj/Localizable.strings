@@ -15,6 +15,8 @@
 "duracion" = "Duració";
 "horas" = "hores";
 "h" = "h";
+"minutos" = "minutes";
+"m" = "m";
 "iniciar" = "Inicia";
 "ajustes" = "Paràmetres";
 "valoraApp" = "Valoreu l'aplicació";
@@ -34,3 +36,17 @@
 "pause" = "Para";
 "timeToChange" = "És hora de canviar";
 "enoughUse" = "Ja ho has utilitzat el temps suficient.";
+"menos" = "menys";
+"usoDeMas" = "Temps excedit";
+"notificaciones" = "NOTIFICACIONS";
+"notificacionesRecurrentes" = "Múltiples recordatoris";
+"notificacionesInfo" = "Si activeu aquesta opció SafeTimer us recordarà en múltiples ocasions (5 m, 10 m, 30 m i 1 h després) que el temporitzador ha acabat fins que ho pareu.";
+"borrar" = "Esborrar";
+"seguroBorrar" = "Esteu segur d'esborrar aquest temporitzador? Aquesta acció no es pot desfer.";
+"cancelar" = "Cancel·lar";
+"reiniciar" = "Reiniciar";
+"duplicar" = "Duplicar";
+"temporizadores" = "TEMPORITZADORS";
+"contarUsos" = "Comptar usos del temporitzador";
+"mostrarUsos" = "Mostrar usos";
+"nUsos" = "Nombre d'usos:";

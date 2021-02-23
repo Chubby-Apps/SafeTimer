@@ -13,12 +13,10 @@ struct botonIniciar: View {
  var LocalizedKey: LocalizedStringKey
  
     var body: some View {
-     Text(LocalizedKey)
-        .font(.body)
-        .bold()
-        .foregroundColor(isEnabled ? Color.white : Color(UIColor.systemGray2))
-        .padding(.horizontal, 25).padding(.vertical, 12)
-        .background(isEnabled ? Color(.systemBlue) : Color(.systemGray5))
-        .cornerRadius(15)
+    Image(systemName: "arrow.right.circle")
+        .font(.system(size: 40, weight: Font.Weight.bold, design: Font.Design.rounded))
+        .foregroundColor(isEnabled ? Color(.systemBlue) : Color(.placeholderText))
+        .offset(x: 0, y: -12)
+        .accessibility(label: Text(LocalizedKey))
     }
 }
